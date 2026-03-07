@@ -1,0 +1,51 @@
+{
+  "nav": {
+    "experience": "Experiência",
+    "lab": "Laboratório",
+    "contact": "Contato"
+  },
+  "hero": {
+    "title1": "Resolvendo problemas",
+    "title2": "através da ",
+    "titleHighlight": "Tecnologia",
+    "subtitle": "Estúdio de desenvolvimento focado na criação de aplicações web modernas, plataformas escaláveis e experiências mobile de alto desempenho.",
+    "cta": "Fale Conosco"
+  },
+  "expertise": {
+    "title": "Nossa Expertise",
+    "webTitle": "Desenvolvimento Web",
+    "webDesc": "Aplicações Full Stack rápidas, seguras e otimizadas para SEO.",
+    "mobileTitle": "Ecossistema Mobile",
+    "mobileDesc": "Soluções nativas e multiplataforma com foco em performance.",
+    "devopsTitle": "Infraestrutura & DevOps",
+    "devopsDesc": "Hospedagem, CI/CD, conteinerização e arquitetura em nuvem."
+  },
+  "experience": {
+    "title": "Experiência Profissional",
+    "climatempoTitle": "Portal Climatempo",
+    "climatempoRole": "Desenvolvedor Full Stack",
+    "climatempoDesc": "Manutenção e evolução de código legado (PHP/Twig) e integração via API REST com portais Next.js. Atuação focada em análise crítica, adaptação de componentes UI modernos, estruturação inicial de rotas e suporte em AdTech/SEO.",
+    "agroclimaTitle": "Projeto Agroclima & Defesa Civil",
+    "agroclimaRole": "Arquitetura e Desenvolvimento",
+    "agroclimaDesc": "Participação chave na concepção do Agroclima, atuando em UI, API (BFF) e pipeline CI/CD. No sistema da Defesa Civil, foco em otimização colaborativa de performance e integração arquitetural entre o Next.js moderno e a infraestrutura PHP legada."
+  },
+  "lab": {
+    "title": "Laboratório & Projetos",
+    "subtitle": "Iniciativas open-source e experimentações com novas tecnologias em desenvolvimento.",
+    "badgeSoon": "Em Breve",
+    "badgeActive": "Ativo",
+    "badgeWip": "WIP",
+    "newsTitle": "News Aggregator API",
+    "newsDesc": "Backend focado em web scraping para agregar notícias de cultura pop, animes e games, processando dados em tempo real.",
+    "aiTitle": "Self-Hosted AI & Homelab",
+    "aiDesc": "Infraestrutura de servidor local baseada em Docker rodando proxy reverso e instâncias privadas de Large Language Models.",
+    "tcgTitle": "TCG Tournament Manager",
+    "tcgDesc": "Plataforma web para organização de chaves, gestão de inscrições e acompanhamento de brackets em torneios locais de Trading Card Games."
+  },
+  "footer": {
+    "title": "Pronto para iniciar seu projeto?",
+    "subtitle": "Entre em contato para conversarmos sobre a melhor solução técnica para o seu negócio ou ideia.",
+    "rights": "Cyber Senpai Works. Todos os direitos reservados.",
+    "location": "Santo André, SP - Brasil"
+  }
+}
