@@ -1,7 +1,12 @@
 import { getDictionary } from '../../getDictionary'
 
-export default async function Home({ params }: { params: { lang: 'pt' | 'en' } }) {
-  const dict = await getDictionary(params.lang)
+export default async function Home({ 
+  params 
+}: { 
+  params: Promise<{ lang: 'pt' | 'en' }> 
+}) {
+  const { lang } = await params;
+  const dict = await getDictionary(lang);
   const currentYear = new Date().getFullYear();
 
   return (
@@ -17,8 +22,8 @@ export default async function Home({ params }: { params: { lang: 'pt' | 'en' } }
           <a href="#laboratorio" className="text-sm font-medium hover:text-cyan-400 transition-colors">{dict.nav.lab}</a>
           <a href="#contato" className="text-sm font-medium hover:text-cyan-400 transition-colors">{dict.nav.contact}</a>
           <div className="h-4 w-px bg-slate-700"></div>
-          <a href="/pt" className={`text-xs font-bold ${params.lang === 'pt' ? 'text-cyan-400' : 'text-slate-500 hover:text-white'}`}>PT</a>
-          <a href="/en" className={`text-xs font-bold ${params.lang === 'en' ? 'text-cyan-400' : 'text-slate-500 hover:text-white'}`}>EN</a>
+          <a href="/pt" className={`text-xs font-bold ${lang === 'pt' ? 'text-cyan-400' : 'text-slate-500 hover:text-white'}`}>PT</a>
+          <a href="/en" className={`text-xs font-bold ${lang === 'en' ? 'text-cyan-400' : 'text-slate-500 hover:text-white'}`}>EN</a>
           <div className="h-4 w-px bg-slate-700"></div>
           <a href="https://github.com/cybersenpaiworks" target="_blank" rel="noreferrer" className="text-slate-400 hover:text-white transition-colors">
             GitHub

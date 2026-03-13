@@ -7,16 +7,18 @@ export const metadata: Metadata = {
   keywords: ["Desenvolvedor Web", "Full Stack", "Next.js", "PHP", "DevOps", "Freelancer", "Santo André"],
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
   params,
 }: {
-  children: React.ReactNode
-  params: { lang: string }
+  children: React.ReactNode;
+  params: Promise<{ lang: string }>;
 }) {
+  const resolvedParams = await params;
+
   return (
-    <html lang={params.lang}>
+    <html lang={resolvedParams.lang}>
       <body>{children}</body>
     </html>
-  )
+  );
 }

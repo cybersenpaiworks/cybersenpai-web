@@ -12,22 +12,14 @@ function getLocale(request: NextRequest): string {
   return defaultLocale
 }
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl
-
-  if (
-    pathname.startsWith('/_next') ||
-    pathname.includes('/api/') ||
-    pathname.includes('.')
-  ) {
-    return
-  }
 
   const pathnameHasLocale = locales.some(
     (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
   )
 
-  if (pathnameHasLocale) return
+  if (pathnameHasLocale) return NextResponse.next()
 
   const locale = getLocale(request)
   request.nextUrl.pathname = `/${locale}${pathname}`
@@ -36,5 +28,7 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ['/((?!_next).*)'],
+  matcher: [
+    '/((?!api|_next/static|_next/image|favicon.ico|.*\\..*).*)'
+  ],
 }
