@@ -2,11 +2,13 @@ import type { NextConfig } from "next";
 import { execSync } from "child_process";
 
 // Captura o hash do commit atual durante o build
-let commitHash = "dev";
-try {
-  commitHash = execSync("git rev-parse --short HEAD").toString().trim();
-} catch (e) {
-  // Ignora erros se não estiver em ambiente Git
+let commitHash = process.env.NEXT_PUBLIC_COMMIT_HASH || "dev";
+if (commitHash === "dev") {
+  try {
+    commitHash = execSync("git rev-parse --short HEAD").toString().trim();
+  } catch (e) {
+    // Ignora erros se não estiver em ambiente Git
+  }
 }
 
 const nextConfig: NextConfig = {

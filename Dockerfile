@@ -15,6 +15,11 @@ FROM base AS builder
 WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
+
+# Recebe o hash do commit do host
+ARG COMMIT_HASH
+ENV NEXT_PUBLIC_COMMIT_HASH=${COMMIT_HASH:-dev}
+
 # Desativa a telemetria do Next.js durante o build
 ENV NEXT_TELEMETRY_DISABLED=1
 RUN npm run build
