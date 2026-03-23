@@ -2,7 +2,8 @@
   "nav": {
     "experience": "Experiência",
     "lab": "Laboratório",
-    "contact": "Contato"
+    "contact": "Contato",
+    "challenges": "Desafios"
   },
   "hero": {
     "title1": "Resolvendo problemas",
@@ -47,5 +48,13 @@
     "subtitle": "Entre em contato para conversarmos sobre a melhor solução técnica para o seu negócio ou ideia.",
     "rights": "Cyber Senpai Works. Todos os direitos reservados.",
     "location": "Santo André, SP - Brasil"
+  },
+  "challenges": {
+    "title": "Coding Challenges",
+    "subtitle": "Uma coleção de desafios clássicos de programação e algoritmos implementados do zero utilizando HTML5 Canvas e TypeScript. Uma homenagem ao canal The Coding Train.",
+    "statusImplemented": "Implementado",
+    "statusSoon": "Em Breve",
+    "backToHome": "Voltar para o Início",
+    "backToGrid": "Voltar aos Desafios"
   }
 }

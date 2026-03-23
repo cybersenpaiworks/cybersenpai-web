@@ -2,7 +2,8 @@
   "nav": {
     "experience": "Experience",
     "lab": "Laboratory",
-    "contact": "Contact"
+    "contact": "Contact",
+    "challenges": "Challenges"
   },
   "hero": {
     "title1": "Solving problems",
@@ -47,5 +48,13 @@
     "subtitle": "Get in touch to discuss the best technical solution for your business or idea.",
     "rights": "Cyber Senpai Works. All rights reserved.",
     "location": "Santo André, SP - Brazil"
+  },
+  "challenges": {
+    "title": "Coding Challenges",
+    "subtitle": "A collection of classic programming and algorithmic challenges implemented from scratch using HTML5 Canvas and TypeScript. A tribute to The Coding Train channel.",
+    "statusImplemented": "Implemented",
+    "statusSoon": "Coming Soon",
+    "backToHome": "Back to Home",
+    "backToGrid": "Back to Challenges"
   }
 }

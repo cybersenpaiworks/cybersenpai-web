@@ -1,0 +1,186 @@
+id,titulo_do_desafio
+1,Starfield
+2,Menger Sponge Fractal
+3,The Snake Game
+4,Purple Rain
+5,Space Invaders
+6,Mitosis Simulation
+7,Solar System in Processing - Part 1 (2D)
+8,Solar System in Processing - Part 2 (3D)
+9,Solar System in Processing - Part 3 (3D textures)
+10,Maze Generator
+11,3D Terrain Generation with Perlin Noise
+12,The Lorenz Attractor
+13,Reaction Diffusion Algorithm
+14,Fractal Trees - Recursive
+15,Object Oriented Fractal Trees
+16,L-System Fractal Trees
+17,Space Colonization Fractal Trees
+18,3D Fractal Trees
+19,Superellipse
+20,3D Cloth with toxilibs
+21,Mandelbrot Set
+22,Julia Set
+23,2D Supershapes
+24,Perlin Noise Flow Field
+25,Spherical Geometry
+26,3D Supershapes
+27,Fireworks!
+28,Metaballs
+29,Smart Rockets
+30,Phyllotaxis
+31,Flappy Bird
+32,Agar.io
+33,Poisson-disc Sampling
+34,Diffusion-Limited Aggregation
+35,Traveling Salesperson - Part 1
+36,Blobby!
+37,Diastic Machine
+38,Word Interactor
+39,Madlibs Generator
+40,TF-IDF
+41,Clappy Bird
+42,Markov Chain Name Generator
+43,Context-Free Grammar
+44,AFINN Sentiment Analysis
+45,Firebase Saving Drawing
+46,Asteroids
+47,Pixel Sorting
+48,White House Data Visualization
+49,Photo Mosaic
+50,Animated Circle Packing
+51,A* Pathfinding Algorithm
+52,Random Walker
+53,Random Walker with Vectors
+54,Islamic Star Patterns
+55,Mathematical Rose Patterns
+56,Attraction and Repulsion Forces
+57,Mapping Earthquake Data
+58,3D Earthquake Data Visualization
+59,Steering Behaviors
+60,Butterfly Generator
+61,Fractal Spirograph
+62,Plinko with Matter.js
+63,Texturing Cloth Simulation
+64,Kinematics - Forward
+65,Kinematics - Inverse
+66,Timer
+67,Pong
+68,Breadth-First Search
+69,Evolutionary Steering Behaviors
+70,Nearest Neighbors Recommendation Engine
+71,Minesweeper
+72,Frogger
+73,A* Pathfinding Algorithm - Part 2 (Diagonals)
+74,Clock
+75,Wikipedia API
+76,10PRINT
+77,Recursion
+78,Simple Particle System
+79,Number Guessing Chatbot
+80,Voice Chatbot with p5.Speech
+81,Circle Morphing
+82,Image to ASCII
+83,Twitter Bot
+84,Word2Vec
+85,Conway's Game of Life
+86,Cube Wave by Bees and Bombs
+87,3D Knots
+88,Snowfall
+89,Langton's Ant
+90,Floyd-Steinberg Dithering
+91,Snakes & Ladders
+92,XOR Problem
+93,Double Pendulum
+94,2048
+95,Approximating the Value of Pi
+96,Visualizing the Digits of Pi
+97,The Book of Pi
+98,Quadtree
+99,Neural Network Color Predictor
+100,Neuroevolution Flappy Bird
+101,May the 4th Scrolling Text
+102,2D Water Ripple
+103,Fire Effect
+104,Linear Regression with Ordinary Least Squares
+105,Polynomial Regression with TensorFlow.js
+106,XOR Problem with TensorFlow.js
+107,Sandpiles
+108,Barnsley Fern
+109,Visualizing 500000 Subscribers
+110,Recamán's Sequence
+111,Animated Sprites
+112,3D Rendering with Rotation and Projection
+113,4D Hypercube (Tesseract)
+114,Bubble Sort Visualization
+115,Snake Game Redux
+116,Lissajous Curve Table
+117,Seven-Segment Display
+118,GitHub Commits Visualization
+119,Binary to Decimal Conversion
+120,Bit Shifting
+121,Logo Interpreter
+122,Quick Sort Visualization
+123,Chaos Game
+124,Flocking Simulation
+125,Fourier Series
+126,Toothpicks
+127,Brownian Tree Snowflake
+128,Sketch-RNN Snowflakes
+129,Koch Fractal Snowflake
+130,Fourier Transform Drawing
+131,Bouncing DVD Logo
+132,Fluid Simulation
+133,Times Tables Cardioid
+134,Heart Curve
+135,GIF Loop
+136,Polar Noise Loop
+137,4D Open Simplex Noise Loop
+138,Angry Birds with Matter.js
+139,Pi in the Sky
+140,Pi Day (Collisions)
+141,Calculating Pi with Random Numbers
+142,Rubik's Cube
+143,Quicksort Visualization
+144,Black Hole Visualization
+145,Raycasting 2D
+146,Rendering Raycasting
+147,Chrome Dinosaur Game
+148,Gift Wrapping Algorithm
+149,Tic Tac Toe
+150,Pi Day 2020 (Estimating Pi)
+151,Ukulele Tuner
+152,RDP Line Simplification Algorithm
+153,Interactive Drawing with Tracking
+154,Tic Tac Toe Minimax
+155,Kaleidoscope Snowflake
+156,Pi Day 2021 (Leibniz Series)
+157,Zoom Annotations with Machine Learning
+158,Shape Classifier with Neural Network
+159,Simple Pendulum Simulation
+160,Spring Forces
+161,Estimating Pi from a Random Walk
+162,Self Avoiding Walk
+163,Bezier Curves
+164,3D Rendering with Camera
+165,Slide Puzzle
+166,ASCII Text Images
+167,Prime Spiral
+168,The Mandelbulb
+169,Pi in the Sky Part 2
+170,Estimation of Pi with Collisions
+171,Wave Function Collapse
+172,Directional Boring
+173,Steganography
+174,Soft Body Physics
+175,3D Software Rendering
+176,GIF Loops with p5.js
+177,Matrix Rain
+178,Climate Spiral
+179,Wolfram's Cellular Automata
+180,Falling Sand
+181,Image to ASCII
+182,Worley Noise
+183,Mathematical Rose Patterns 2
+184,Elastic Collisions
+185,Mathematical Patterns

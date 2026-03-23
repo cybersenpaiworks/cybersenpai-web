@@ -1,4 +1,6 @@
 import { getDictionary } from '../../getDictionary'
+import Header from '../../components/layout/Header'
+import Footer from '../../components/layout/Footer'
 
 export default async function Home({ 
   params 
@@ -7,32 +9,11 @@ export default async function Home({
 }) {
   const { lang } = await params;
   const dict = await getDictionary(lang);
-  const currentYear = new Date().getFullYear();
 
   return (
     <div className="min-h-screen bg-slate-900 text-slate-100 font-sans selection:bg-cyan-500 selection:text-white scroll-smooth">
       
-      {/* Header */}
-      <header className="container mx-auto px-6 py-8 flex justify-between items-center">
-        <div className="text-2xl font-bold text-cyan-400 tracking-tighter">
-          CyberSenpai<span className="text-white">Works</span>.
-        </div>
-        <nav className="hidden md:flex items-center gap-6">
-          <a href="#experiencia" className="text-sm font-medium hover:text-cyan-400 transition-colors">{dict.nav.experience}</a>
-          <a href="#laboratorio" className="text-sm font-medium hover:text-cyan-400 transition-colors">{dict.nav.lab}</a>
-          <a href="#contato" className="text-sm font-medium hover:text-cyan-400 transition-colors">{dict.nav.contact}</a>
-          <div className="h-4 w-px bg-slate-700"></div>
-          <a href="/pt" className={`text-xs font-bold ${lang === 'pt' ? 'text-cyan-400' : 'text-slate-500 hover:text-white'}`}>PT</a>
-          <a href="/en" className={`text-xs font-bold ${lang === 'en' ? 'text-cyan-400' : 'text-slate-500 hover:text-white'}`}>EN</a>
-          <div className="h-4 w-px bg-slate-700"></div>
-          <a href="https://github.com/cybersenpaiworks" target="_blank" rel="noreferrer" className="text-slate-400 hover:text-white transition-colors">
-            GitHub
-          </a>
-          <a href="https://www.linkedin.com/in/gabriel-r-vancini" target="_blank" rel="noreferrer" className="text-slate-400 hover:text-cyan-400 transition-colors">
-            LinkedIn
-          </a>
-        </nav>
-      </header>
+      <Header lang={lang} dict={dict} />
 
       {/* Hero Section */}
       <main className="container mx-auto px-6 py-20 flex flex-col items-center text-center">
@@ -164,18 +145,7 @@ export default async function Home({
         </div>
       </section>
 
-      {/* Footer / Contact */}
-      <footer id="contato" className="container mx-auto px-6 py-20 text-center border-t border-slate-800">
-        <h2 className="text-3xl font-bold mb-6">{dict.footer.title}</h2>
-        <p className="text-slate-400 mb-8 max-w-xl mx-auto">{dict.footer.subtitle}</p>
-        <a href="mailto:contato@cybersenpaiworks.com.br" className="inline-block text-2xl font-bold text-cyan-400 hover:text-cyan-300 hover:-translate-y-1 transition-all">
-          contato@cybersenpaiworks.com.br
-        </a>
-        <div className="mt-16 text-slate-600 text-sm">
-          &copy; {currentYear} {dict.footer.rights} <br />
-          {dict.footer.location}
-        </div>
-      </footer>
+      <Footer dict={dict} />
 
     </div>
   )
