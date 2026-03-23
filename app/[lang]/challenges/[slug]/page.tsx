@@ -5,6 +5,7 @@ import { challenges } from '../../../../data/challenges';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import ChallengeRenderer from '../../../../components/ChallengeRenderer';
+import ChallengeArchitecture from '../../../../components/ChallengeArchitecture';
 
 export default async function ChallengeDetailPage({
   params
@@ -38,7 +39,8 @@ export default async function ChallengeDetailPage({
         </div>
 
         <div className="w-full max-w-6xl mx-auto">
-          <ChallengeRenderer id={challenge.id} />
+          <ChallengeRenderer id={challenge.id} videoUrl={challenge.videoUrl} dict={dict} lang={lang} />
+          <ChallengeArchitecture dict={dict} lang={lang} />
         </div>
       </main>
 

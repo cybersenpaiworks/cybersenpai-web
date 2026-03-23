@@ -55,6 +55,32 @@
     "statusImplemented": "Implementado",
     "statusSoon": "Em Breve",
     "backToHome": "Voltar para o Início",
-    "backToGrid": "Voltar aos Desafios"
+    "backToGrid": "Voltar aos Desafios",
+    "tabSolution": "Minha Solução",
+    "tabReference": "Referência Original",
+    "viewVideo": "Assistir no YouTube",
+    "loadingSimulation": "Inicializando Simulação de Alto Desempenho...",
+    "engine": "HTML5 Canvas + Vanilla TS",
+    "originalReferenceDesc": "Confira a inspiração original e a explicação teórica deste desafio feita pelo mestre Daniel Shiffman."
+  },
+  "infra": {
+    "button": "Ver Arquitetura & CI/CD",
+    "title": "Arquitetura de Deploy",
+    "pipeline": "Pipeline Automatizada",
+    "stack": "Stack Tecnológica",
+    "version": "Versão do Build",
+    "deployedAt": "Deploy realizado em",
+    "environment": "Ambiente de Execução",
+    "flow": "Fluxo do Código",
+    "source": "Repositório",
+    "ci": "Integração Contínua",
+    "registry": "Registro de Imagens",
+    "host": "Orquestração",
+    "edge": "Gateway & Segurança",
+    "description": "Este desafio foi versionado via Git e entregue através de uma esteira automatizada de CI/CD para o meu cluster privado.",
+    "serviceRepo": "Repositório GitHub",
+    "serviceCi": "CI/CD com GitHub Actions",
+    "serviceHost": "Docker Standalone & Portainer",
+    "serviceEdge": "Nginx Proxy Manager & Cloudflare"
   }
 }

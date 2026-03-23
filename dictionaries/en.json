@@ -55,6 +55,32 @@
     "statusImplemented": "Implemented",
     "statusSoon": "Coming Soon",
     "backToHome": "Back to Home",
-    "backToGrid": "Back to Challenges"
+    "backToGrid": "Back to Challenges",
+    "tabSolution": "My Solution",
+    "tabReference": "Original Reference",
+    "viewVideo": "Watch on YouTube",
+    "loadingSimulation": "Initializing High-Performance Simulation...",
+    "engine": "HTML5 Canvas + Vanilla TS",
+    "originalReferenceDesc": "Check out the original inspiration and theoretical explanation of this challenge by the master Daniel Shiffman."
+  },
+  "infra": {
+    "button": "View Architecture & CI/CD",
+    "title": "Deployment Architecture",
+    "pipeline": "Automated Pipeline",
+    "stack": "Technology Stack",
+    "version": "Build Version",
+    "deployedAt": "Deployed at",
+    "environment": "Runtime Environment",
+    "flow": "Code Flow",
+    "source": "Source Repository",
+    "ci": "Continuous Integration",
+    "registry": "Image Registry",
+    "host": "Orchestration",
+    "edge": "Gateway & Security",
+    "description": "This challenge was versioned via Git and delivered through an automated CI/CD pipeline to my private cluster.",
+    "serviceRepo": "GitHub Repository",
+    "serviceCi": "GitHub Actions CI/CD",
+    "serviceHost": "Docker Standalone & Portainer",
+    "serviceEdge": "Nginx Proxy Manager & Cloudflare"
   }
 }
