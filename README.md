@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Cyber Senpai Web
 
-## Getting Started
+Site institucional da Cyber Senpai Works com catálogo bilíngue de coding challenges em Next.js.
 
-First, run the development server:
+## Stack
+
+- Next.js 16 com App Router
+- React 19
+- TypeScript estrito
+- Tailwind CSS 4
+- Deploy Docker em modo `standalone`
+
+## Requisitos
+
+- Node.js `20.19.6`
+- npm `10+`
+
+O repositório inclui um arquivo `.nvmrc` para alinhar o ambiente local com a versão esperada.
+
+## Setup local
+
+```bash
+nvm install
+nvm use
+npm ci
+```
+
+## Scripts
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run lint
+npm run typecheck
+npm run test
+npm run build
+npm run start
+npm run smoke
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Sincronização dos challenges
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+O catálogo base fica versionado em `data/challenges.json`.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+O comando abaixo consulta o repositório do The Coding Train e atualiza esse arquivo:
 
-## Learn More
+```bash
+npm run sync
+```
 
-To learn more about Next.js, take a look at the following resources:
+Notas importantes:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `sync` é manual e não faz mais parte do `build`
+- o comando requer Node 20+ por usar `fetch` nativo
+- a sincronização depende de acesso à API do GitHub
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Arquitetura
 
-## Deploy on Vercel
+### Rotas
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- `app/[lang]/page.tsx`: home institucional
+- `app/[lang]/challenges/page.tsx`: grade de desafios
+- `app/[lang]/challenges/[slug]/page.tsx`: detalhe de um desafio implementado
+- `proxy.ts`: detecção e redirecionamento de locale
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Internacionalização
+
+- os dicionários ficam em `dictionaries/pt.json` e `dictionaries/en.json`
+- o carregamento acontece via `getDictionary(lang)`
+- o locale padrão é `pt`
+
+### Challenges
+
+- o catálogo sincronizado fica em `data/challenges.json`
+- a camada tipada do catálogo fica em `data/challenges.ts`
+- desafios implementados são registrados em `data/implementedChallenges.ts`
+- o mapeamento de componentes fica em `components/challenges/registry.tsx`
+
+## Build e deploy
+
+O projeto usa `output: "standalone"` em `next.config.ts` e possui `Dockerfile` multi-stage para produção.
+
+Fluxo esperado:
+
+```bash
+npm ci
+npm run lint
+npm run typecheck
+npm run test
+npm run build
+npm run smoke
+```
+
+## Estado atual
+
+- a home e a navegação principal são bilíngues
+- o catálogo lista todos os desafios sincronizados
+- apenas desafios marcados como `implemented: true` possuem página pública
+- o README anterior era boilerplate do `create-next-app` e foi substituído por esta documentação
