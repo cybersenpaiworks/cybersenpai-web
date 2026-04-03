@@ -1,7 +1,9 @@
 import Link from 'next/link';
 import { Challenge } from '../data/challenges';
+import type { Dictionary } from '../dictionary';
+import type { Locale } from '../i18n';
 
-export default function ChallengeCard({ challenge, lang, dict }: { challenge: Challenge, lang: string, dict: Record<string, Record<string, string>> }) {
+export default function ChallengeCard({ challenge, lang, dict }: { challenge: Challenge, lang: Locale, dict: Dictionary }) {
   if (challenge.implemented) {
     return (
       <Link href={`/${lang}/challenges/${challenge.slug}`} className="group block bg-slate-800/50 rounded-xl p-6 border border-cyan-500/30 hover:border-cyan-400 hover:bg-slate-800 transition-all duration-300 hover:-translate-y-1">

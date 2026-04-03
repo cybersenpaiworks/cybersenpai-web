@@ -2,11 +2,15 @@ import fs from 'fs';
 
 async function sync() {
   console.log('--- Iniciando Sincronização de Dados (DevOps Approach) ---');
-  
-  // Fonte original: Repositório do Coding Train no GitHub
-  const GITHUB_API = 'https://api.github.com/repos/CodingTrain/thecodingtrain.com/contents/content/videos/challenges';
 
   try {
+    if (typeof fetch !== 'function') {
+      throw new Error('O comando de sync requer Node.js 20+ para usar fetch nativo.');
+    }
+
+    // Fonte original: Repositório do Coding Train no GitHub
+    const GITHUB_API = 'https://api.github.com/repos/CodingTrain/thecodingtrain.com/contents/content/videos/challenges';
+
     const response = await fetch(GITHUB_API, {
       headers: { 'User-Agent': 'CyberSenpai-Web-Sync' }
     });
@@ -27,28 +31,17 @@ async function sync() {
           id,
           title: title || 'Challenge',
           slug: item.name,
-          implemented: id === 1, // Starfield como PoC
           videoUrl: `https://www.youtube.com/results?search_query=Coding+Train+Challenge+${id}`
         };
       })
       .sort((a, b) => a.id - b.id);
 
-    const tsContent = `export interface Challenge {
-  id: number;
-  title: string;
-  slug: string;
-  implemented: boolean;
-  videoUrl?: string;
-}
-
-export const challenges: Challenge[] = ${JSON.stringify(processed, null, 2)};
-`;
-
-    fs.writeFileSync('./data/challenges.ts', tsContent);
+    fs.writeFileSync('./data/challenges.json', `${JSON.stringify(processed, null, 2)}\n`);
     console.log(`Sincronizados ${processed.length} desafios com sucesso!`);
     
   } catch (err) {
     console.error('Falha na sincronização:', err.message);
+    process.exitCode = 1;
   }
 }
 

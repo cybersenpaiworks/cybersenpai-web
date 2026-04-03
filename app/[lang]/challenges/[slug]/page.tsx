@@ -1,24 +1,55 @@
+import type { Metadata } from 'next';
 import { getDictionary } from '../../../../getDictionary';
+import { getBuildInfo } from '../../../../getBuildInfo';
+import type { Locale } from '../../../../i18n';
+import { getPageMetadata } from '../../../../siteMetadata';
 import Header from '../../../../components/layout/Header';
 import Footer from '../../../../components/layout/Footer';
-import { challenges } from '../../../../data/challenges';
+import { getImplementedChallengeBySlug } from '../../../../data/implementedChallenges';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import ChallengeRenderer from '../../../../components/ChallengeRenderer';
 import ChallengeArchitecture from '../../../../components/ChallengeArchitecture';
 
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: Locale, slug: string }>
+}): Promise<Metadata> {
+  const { lang, slug } = await params;
+  const dict = await getDictionary(lang);
+  const challenge = getImplementedChallengeBySlug(slug);
+
+  if (!challenge) {
+    return getPageMetadata({
+      locale: lang,
+      pathname: 'challenges',
+      title: dict.challenges.title,
+      description: dict.challenges.subtitle,
+    });
+  }
+
+  return getPageMetadata({
+    locale: lang,
+    pathname: `challenges/${challenge.slug}`,
+    title: `${challenge.title} | ${dict.challenges.title}`,
+    description: challenge.summary[lang],
+    keywords: [...challenge.keywords, ...challenge.tags],
+  });
+}
+
 export default async function ChallengeDetailPage({
   params
 }: {
-  params: Promise<{ lang: 'pt' | 'en', slug: string }>
+  params: Promise<{ lang: Locale, slug: string }>
 }) {
   const { lang, slug } = await params;
   const dict = await getDictionary(lang);
+  const buildInfo = getBuildInfo(lang);
 
-  const challenge = challenges.find(c => c.slug === slug);
+  const challenge = getImplementedChallengeBySlug(slug);
 
-  // Se não existir ou não estiver implementado, retorna 404
-  if (!challenge || !challenge.implemented) {
+  if (!challenge) {
     notFound();
   }
 
@@ -39,8 +70,8 @@ export default async function ChallengeDetailPage({
         </div>
 
         <div className="w-full max-w-6xl mx-auto">
-          <ChallengeRenderer id={challenge.id} videoUrl={challenge.videoUrl} dict={dict} lang={lang} />
-          <ChallengeArchitecture dict={dict} lang={lang} />
+          <ChallengeRenderer challenge={challenge} dict={dict} />
+          <ChallengeArchitecture dict={dict} buildInfo={buildInfo} />
         </div>
       </main>
 

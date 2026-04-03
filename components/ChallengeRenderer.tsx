@@ -1,25 +1,20 @@
 'use client';
 
-import dynamic from 'next/dynamic';
 import { useState } from 'react';
 
-const Starfield = dynamic(() => import('./challenges/001-Starfield'), { 
-  ssr: false,
-  loading: () => (
-    <div className="w-full h-[600px] md:h-[700px] flex flex-col items-center justify-center bg-slate-900 border border-slate-800 rounded-2xl animate-pulse text-center p-6">
-      <div className="w-10 h-10 border-4 border-cyan-500 border-t-transparent rounded-full animate-spin mb-6 mx-auto"></div>
-      <p className="text-slate-400 font-mono text-sm">Loading Simulation...</p>
-    </div>
-  )
-});
+import type { ImplementedChallenge } from '../data/implementedChallenges';
+import type { Dictionary } from '../dictionary';
+import { challengeComponents } from './challenges/registry';
 
-const challengeComponents: Record<number, React.ComponentType> = {
-  1: Starfield
-};
-
-export default function ChallengeRenderer({ id, videoUrl, dict, lang }: { id: number, videoUrl?: string, dict: Record<string, Record<string, string>>, lang: string }) {
+export default function ChallengeRenderer({
+  challenge,
+  dict,
+}: {
+  challenge: ImplementedChallenge;
+  dict: Dictionary;
+}) {
   const [activeTab, setActiveTab] = useState<'solution' | 'reference'>('solution');
-  const Component = challengeComponents[id];
+  const Component = challengeComponents[challenge.id];
   
   return (
     <div className="w-full">
@@ -46,7 +41,7 @@ export default function ChallengeRenderer({ id, videoUrl, dict, lang }: { id: nu
         {activeTab === 'solution' ? (
           Component ? <Component /> : (
             <div className="text-center py-20 bg-slate-800/50 rounded-xl border border-slate-700">
-              <p>A simulação #{id} ainda não foi vinculada ao renderizador.</p>
+              <p>The simulation for {challenge.title} is not linked to the renderer yet.</p>
             </div>
           )
         ) : (
@@ -60,7 +55,7 @@ export default function ChallengeRenderer({ id, videoUrl, dict, lang }: { id: nu
                 {dict.challenges.originalReferenceDesc}
               </p>
               <a 
-                href={videoUrl} 
+                href={challenge.videoUrl} 
                 target="_blank" 
                 rel="noreferrer" 
                 className="inline-flex items-center gap-2 bg-slate-100 hover:bg-white text-slate-900 font-bold py-3 px-8 rounded-full transition-all"

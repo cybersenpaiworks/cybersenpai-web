@@ -1,13 +1,34 @@
+import type { Metadata } from 'next';
+
 import { getDictionary } from '../../../getDictionary';
+import type { Locale } from '../../../i18n';
+import { getPageMetadata } from '../../../siteMetadata';
 import Header from '../../../components/layout/Header';
 import Footer from '../../../components/layout/Footer';
 import ChallengeCard from '../../../components/ChallengeCard';
 import { challenges } from '../../../data/challenges';
 
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: Locale }>
+}): Promise<Metadata> {
+  const { lang } = await params;
+  const dict = await getDictionary(lang);
+
+  return getPageMetadata({
+    locale: lang,
+    pathname: 'challenges',
+    title: dict.challenges.title,
+    description: dict.challenges.subtitle,
+    keywords: ['HTML5 Canvas', 'TypeScript', 'The Coding Train'],
+  });
+}
+
 export default async function ChallengesPage({
   params
 }: {
-  params: Promise<{ lang: 'pt' | 'en' }>
+  params: Promise<{ lang: Locale }>
 }) {
   const { lang } = await params;
   const dict = await getDictionary(lang);
