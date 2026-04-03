@@ -10,6 +10,15 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import ChallengeRenderer from '../../../../components/ChallengeRenderer';
 import ChallengeArchitecture from '../../../../components/ChallengeArchitecture';
+import { implementedChallenges } from '../../../../data/implementedChallenges';
+
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return implementedChallenges.map((challenge) => ({
+    slug: challenge.slug,
+  }));
+}
 
 export async function generateMetadata({
   params,
