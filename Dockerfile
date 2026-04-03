@@ -17,7 +17,10 @@ COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
 # Recebe o hash do commit do host
+ARG SITE_URL
 ARG COMMIT_HASH
+ENV SITE_URL=${SITE_URL:-https://home.example.com}
+ENV NEXT_PUBLIC_SITE_URL=${SITE_URL:-https://home.example.com}
 ENV NEXT_PUBLIC_COMMIT_HASH=${COMMIT_HASH:-dev}
 
 # Desativa a telemetria do Next.js durante o build

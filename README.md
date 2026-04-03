@@ -79,6 +79,29 @@ Notas importantes:
 
 O projeto usa `output: "standalone"` em `next.config.ts` e possui `Dockerfile` multi-stage para produção.
 
+### Portainer via Git
+
+O repositório inclui `docker-compose.yml` para uso em `Stacks -> Git repository` no Portainer.
+
+Variáveis mínimas da stack:
+
+```bash
+SITE_URL=https://seu-dominio.example.com
+COMMIT_HASH=portainer-git
+PROXY_NETWORK=proxy-network
+```
+
+O arquivo `portainer.env.example` serve como referência.
+
+Observações:
+
+- `SITE_URL` entra no build e no runtime para manter `canonical`, `robots.txt` e `sitemap.xml` com o domínio correto
+- `COMMIT_HASH` é opcional, mas evita que a versão exibida caia para `dev`
+- a stack conecta o app à rede Docker externa `proxy-network`
+- o app fica acessível internamente como `cybersenpai-web:3000`
+- no Nginx Proxy Manager, o `Forward Hostname / IP` deve ser `cybersenpai-web` e a porta `3000`
+- se a sua rede externa tiver outro nome, ajuste `PROXY_NETWORK`
+
 Fluxo esperado:
 
 ```bash
