@@ -6,7 +6,7 @@ let commitHash = process.env.NEXT_PUBLIC_COMMIT_HASH || "dev";
 if (commitHash === "dev") {
   try {
     commitHash = execSync("git rev-parse --short HEAD").toString().trim();
-  } catch (e) {
+  } catch {
     // Ignora erros se não estiver em ambiente Git
   }
 }
