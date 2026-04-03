@@ -1,11 +1,25 @@
+import type { Metadata } from 'next';
+
 import { getDictionary } from '../../getDictionary'
+import type { Locale } from '../../i18n'
+import { getPageMetadata } from '../../siteMetadata'
 import Header from '../../components/layout/Header'
 import Footer from '../../components/layout/Footer'
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: Locale }>
+}): Promise<Metadata> {
+  const { lang } = await params;
+
+  return getPageMetadata({ locale: lang });
+}
 
 export default async function Home({ 
   params 
 }: { 
-  params: Promise<{ lang: 'pt' | 'en' }> 
+  params: Promise<{ lang: Locale }> 
 }) {
   const { lang } = await params;
   const dict = await getDictionary(lang);

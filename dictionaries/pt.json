@@ -3,7 +3,9 @@
     "experience": "Experiência",
     "lab": "Laboratório",
     "contact": "Contato",
-    "challenges": "Desafios"
+    "challenges": "Desafios",
+    "menu": "Menu",
+    "closeMenu": "Fechar menu"
   },
   "hero": {
     "title1": "Resolvendo problemas",

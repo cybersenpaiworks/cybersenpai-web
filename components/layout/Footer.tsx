@@ -1,4 +1,6 @@
-export default function Footer({ dict }: { dict: Record<string, Record<string, string>> }) {
+import type { Dictionary } from '../../dictionary';
+
+export default function Footer({ dict }: { dict: Dictionary }) {
   const currentYear = new Date().getFullYear();
   
   return (

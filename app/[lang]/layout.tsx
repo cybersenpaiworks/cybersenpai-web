@@ -1,23 +1,35 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+
+import { defaultLocale, isLocale } from "../../i18n";
+import { getSiteMetadata } from "../../siteMetadata";
 import "../globals.css";
 
-export const metadata: Metadata = {
-  title: "Cyber Senpai Works | Desenvolvimento e DevOps",
-  description: "Estúdio de desenvolvimento Full Stack focado em soluções web, mobile e infraestrutura em nuvem por Gabriel Vancini.",
-  keywords: ["Desenvolvedor Web", "Full Stack", "Next.js", "PHP", "DevOps", "Freelancer", "Santo André"],
+type LayoutProps = {
+  children: React.ReactNode;
+  params: Promise<{ lang: string }>;
 };
+
+export async function generateMetadata({
+  params,
+}: Omit<LayoutProps, "children">): Promise<Metadata> {
+  const { lang } = await params;
+
+  return getSiteMetadata(isLocale(lang) ? lang : defaultLocale);
+}
 
 export default async function RootLayout({
   children,
   params,
-}: {
-  children: React.ReactNode;
-  params: Promise<{ lang: string }>;
-}) {
-  const resolvedParams = await params;
+}: LayoutProps) {
+  const { lang } = await params;
+
+  if (!isLocale(lang)) {
+    notFound();
+  }
 
   return (
-    <html lang={resolvedParams.lang}>
+    <html lang={lang}>
       <body>{children}</body>
     </html>
   );

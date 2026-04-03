@@ -2,12 +2,11 @@
 
 import { useState } from 'react';
 
-export default function ChallengeArchitecture({ dict, lang }: { dict: Record<string, Record<string, string>>, lang: string }) {
+import type { Dictionary } from '../dictionary';
+import type { BuildInfo } from '../getBuildInfo';
+
+export default function ChallengeArchitecture({ dict, buildInfo }: { dict: Dictionary, buildInfo: BuildInfo }) {
   const [isOpen, setIsOpen] = useState(false);
-  const commitHash = process.env.NEXT_PUBLIC_COMMIT_HASH || 'dev';
-  const buildDate = process.env.NEXT_PUBLIC_BUILD_TIME 
-    ? new Date(process.env.NEXT_PUBLIC_BUILD_TIME).toLocaleString(lang === 'pt' ? 'pt-BR' : 'en-US') 
-    : '---';
 
   return (
     <div className="mt-12 bg-slate-800/20 rounded-2xl border border-slate-800 overflow-hidden">
@@ -21,7 +20,7 @@ export default function ChallengeArchitecture({ dict, lang }: { dict: Record<str
           </div>
           <div>
             <h3 className="font-bold text-white leading-none mb-1">{dict.infra.button}</h3>
-            <p className="text-xs text-slate-500 font-mono tracking-wider">VERSION: {commitHash}</p>
+            <p className="text-xs text-slate-500 font-mono tracking-wider">VERSION: {buildInfo.commitHash}</p>
           </div>
         </div>
         <div className={`transform transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}>
@@ -88,15 +87,15 @@ export default function ChallengeArchitecture({ dict, lang }: { dict: Record<str
                 <div className="space-y-4">
                   <div className="flex justify-between items-center py-3 border-b border-slate-800">
                     <span className="text-sm text-slate-500">{dict.infra.version}</span>
-                    <span className="text-sm font-mono text-cyan-400 bg-cyan-400/10 px-2 py-0.5 rounded">{commitHash}</span>
+                    <span className="text-sm font-mono text-cyan-400 bg-cyan-400/10 px-2 py-0.5 rounded">{buildInfo.commitHash}</span>
                   </div>
                   <div className="flex justify-between items-center py-3 border-b border-slate-800">
                     <span className="text-sm text-slate-500">{dict.infra.deployedAt}</span>
-                    <span className="text-sm font-medium">{buildDate}</span>
+                    <span className="text-sm font-medium">{buildInfo.buildDate}</span>
                   </div>
                   <div className="flex justify-between items-center py-3">
                     <span className="text-sm text-slate-500">{dict.infra.environment}</span>
-                    <span className="text-sm font-medium text-emerald-400">Node.js {process.version} (Linux)</span>
+                    <span className="text-sm font-medium text-emerald-400">{buildInfo.runtimeLabel}</span>
                   </div>
                 </div>
               </div>

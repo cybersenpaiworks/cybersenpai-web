@@ -1,11 +1,10 @@
 import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
 
-const locales = ['pt', 'en']
-const defaultLocale = 'pt'
+import { defaultLocale, locales } from './i18n'
 
 function getLocale(request: NextRequest): string {
-  const acceptLanguage = request.headers.get('accept-language')
+  const acceptLanguage = request.headers.get('accept-language')?.toLowerCase()
   if (acceptLanguage && acceptLanguage.includes('en')) {
     return 'en'
   }

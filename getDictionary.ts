@@ -1,11 +1,6 @@
-import 'server-only'
+import 'server-only';
 
-const dictionaries = {
-  en: () => import('./dictionaries/en.json').then((module) => module.default),
-  pt: () => import('./dictionaries/pt.json').then((module) => module.default),
-}
+import { dictionaries, type Dictionary } from './dictionary';
+import { type Locale } from './i18n';
 
-export const getDictionary = async (locale: string) => {
-  const safeLocale = locale as keyof typeof dictionaries;
-  return dictionaries[safeLocale] ? dictionaries[safeLocale]() : dictionaries.pt();
-}
+export const getDictionary = async (locale: Locale): Promise<Dictionary> => dictionaries[locale];
