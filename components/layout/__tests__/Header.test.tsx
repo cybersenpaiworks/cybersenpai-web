@@ -44,10 +44,11 @@ describe('Header mobile navigation', () => {
 
     const dialog = screen.getByRole('dialog', { name: 'Menu' });
 
-    expect(within(dialog).getByRole('link', { name: 'Experiência' }).getAttribute('href')).toBe('/pt#experiencia');
-    expect(within(dialog).getByRole('link', { name: 'Laboratório' }).getAttribute('href')).toBe('/pt#laboratorio');
-    expect(within(dialog).getByRole('link', { name: 'Desafios' }).getAttribute('href')).toBe('/pt/challenges');
-    expect(within(dialog).getByRole('link', { name: 'Contato' }).getAttribute('href')).toBe('/pt#contato');
+    expect(within(dialog).getByRole('link', { name: 'Projetos' }).getAttribute('href')).toBe('/pt#projects');
+    expect(within(dialog).getByRole('link', { name: 'Serviços' }).getAttribute('href')).toBe('/pt#services');
+    expect(within(dialog).getByRole('link', { name: 'Sobre' }).getAttribute('href')).toBe('/pt#about');
+    expect(within(dialog).getByRole('link', { name: 'Laboratório' }).getAttribute('href')).toBe('/pt/challenges');
+    expect(within(dialog).getByRole('link', { name: 'Contato' }).getAttribute('href')).toBe('/pt#contact');
     expect(within(dialog).getByRole('link', { name: 'PT' }).getAttribute('href')).toBe('/pt/challenges/1-starfield');
     expect(within(dialog).getByRole('link', { name: 'EN' }).getAttribute('href')).toBe('/en/challenges/1-starfield');
   });
@@ -56,7 +57,7 @@ describe('Header mobile navigation', () => {
     render(<Header lang="pt" dict={dictionaries.pt} />);
 
     fireEvent.click(screen.getByRole('button', { name: 'Menu' }));
-    fireEvent.click(within(screen.getByRole('dialog', { name: 'Menu' })).getByRole('link', { name: 'Desafios' }));
+    fireEvent.click(within(screen.getByRole('dialog', { name: 'Menu' })).getByRole('link', { name: 'Laboratório' }));
 
     expect(screen.queryByRole('dialog', { name: 'Menu' })).toBeNull();
   });

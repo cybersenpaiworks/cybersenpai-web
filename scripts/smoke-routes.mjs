@@ -88,7 +88,7 @@ async function run() {
 
     const ptHome = await fetchText('/pt');
     assert(ptHome.response.ok, `Expected "/pt" to return 200, got ${ptHome.response.status}.`);
-    assert(ptHome.text.includes('Fale Conosco'), 'Expected Portuguese home page content to be present.');
+    assert(ptHome.text.includes('Fale sobre seu projeto'), 'Expected Portuguese home page content to be present.');
     assert(
       ptHome.text.includes('rel="canonical" href="https://cybersenpaiworks.com.br/pt"'),
       'Expected Portuguese home page canonical tag to be present.'
@@ -100,7 +100,7 @@ async function run() {
 
     const enHome = await fetchText('/en');
     assert(enHome.response.ok, `Expected "/en" to return 200, got ${enHome.response.status}.`);
-    assert(enHome.text.includes("Let's Talk"), 'Expected English home page content to be present.');
+    assert(enHome.text.includes('Discuss your project'), 'Expected English home page content to be present.');
     assert(
       enHome.text.includes('<html lang="en">'),
       'Expected English home page to render with lang="en".'
@@ -110,13 +110,29 @@ async function run() {
       'Expected English home page Open Graph locale to be present.'
     );
 
+    const climatempoCase = await fetchText('/pt/projects/climatempo');
+    assert(
+      climatempoCase.response.ok,
+      `Expected "/pt/projects/climatempo" to return 200, got ${climatempoCase.response.status}.`
+    );
+    assert(
+      climatempoCase.text.includes('Climatempo'),
+      'Expected Climatempo case study title to be present.'
+    );
+    assert(
+      climatempoCase.text.includes(
+        'rel="canonical" href="https://cybersenpaiworks.com.br/pt/projects/climatempo"'
+      ),
+      'Expected Climatempo case study canonical tag to be present.'
+    );
+
     const challengesPage = await fetchText('/pt/challenges');
     assert(
       challengesPage.response.ok,
       `Expected "/pt/challenges" to return 200, got ${challengesPage.response.status}.`
     );
     assert(
-      challengesPage.text.includes('Coding Challenges'),
+      challengesPage.text.includes('Laboratório'),
       'Expected challenges index title to be present.'
     );
     assert(
@@ -176,6 +192,10 @@ async function run() {
     assert(
       sitemap.text.includes('https://cybersenpaiworks.com.br/pt/challenges/2-menger-sponge'),
       'Expected second implemented challenge URL to be present in sitemap.'
+    );
+    assert(
+      sitemap.text.includes('https://cybersenpaiworks.com.br/pt/projects/climatempo'),
+      'Expected Climatempo case study URL to be present in sitemap.'
     );
 
     console.log('Smoke route checks passed.');

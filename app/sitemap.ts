@@ -37,6 +37,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
       },
     });
 
+    entries.push({
+      url: getLocalizedUrl(locale, 'projects/climatempo'),
+      lastModified,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+      alternates: {
+        languages: getAlternateLanguageUrls('projects/climatempo'),
+      },
+    });
+
     for (const challenge of implementedChallenges) {
       entries.push({
         url: getLocalizedUrl(locale, `challenges/${challenge.slug}`),

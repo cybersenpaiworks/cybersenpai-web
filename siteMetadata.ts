@@ -23,13 +23,17 @@ const siteMetadata: Record<
   }
 > = {
   pt: {
-    title: 'Cyber Senpai Works | Desenvolvimento e DevOps',
+    title: 'Gabriel Vancini | Desenvolvimento web, APIs e infraestrutura moderna',
     description:
-      'Estúdio de desenvolvimento Full Stack focado em soluções web, mobile e infraestrutura em nuvem por Gabriel Vancini.',
+      'Estúdio independente de Gabriel Vancini para desenvolvimento web, integrações BFF/API, SEO técnico e infraestrutura moderna.',
     keywords: [
       'Desenvolvedor Web',
       'Full Stack',
       'Next.js',
+      'Integrações',
+      'BFF',
+      'API',
+      'SEO Técnico',
       'PHP',
       'DevOps',
       'Freelancer',
@@ -37,13 +41,17 @@ const siteMetadata: Record<
     ],
   },
   en: {
-    title: 'Cyber Senpai Works | Full Stack Development and DevOps',
+    title: 'Gabriel Vancini | Web development, APIs, and modern infrastructure',
     description:
-      'Full Stack development studio focused on web, mobile, and cloud infrastructure solutions by Gabriel Vancini.',
+      'Independent studio by Gabriel Vancini focused on web development, BFF/API integrations, technical SEO, and modern infrastructure.',
     keywords: [
       'Web Developer',
       'Full Stack',
       'Next.js',
+      'Integrations',
+      'BFF',
+      'API',
+      'Technical SEO',
       'PHP',
       'DevOps',
       'Freelancer',

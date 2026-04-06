@@ -1,85 +1,261 @@
 {
   "nav": {
-    "experience": "Experiência",
+    "projects": "Projetos",
+    "services": "Serviços",
+    "about": "Sobre",
     "lab": "Laboratório",
     "contact": "Contato",
-    "challenges": "Desafios",
     "menu": "Menu",
     "closeMenu": "Fechar menu"
   },
   "hero": {
-    "title1": "Resolvendo problemas",
-    "title2": "através da ",
-    "titleHighlight": "Tecnologia",
-    "subtitle": "Estúdio de desenvolvimento focado na criação de aplicações web modernas, plataformas escaláveis e experiências mobile de alto desempenho.",
-    "cta": "Fale Conosco"
+    "eyebrow": "Gabriel Vancini • Desenvolvimento web, BFF/API e infraestrutura moderna",
+    "title": "Desenvolvimento web com foco em performance, integração e entrega em produção.",
+    "subtitle": "Cyber Senpai Works é o meu estúdio independente para sites, aplicações web e evoluções técnicas em produtos digitais enxutos. Atuo com Next.js, APIs, SEO técnico e modernização de sistemas.",
+    "primaryCta": "Fale sobre seu projeto",
+    "secondaryCta": "Ver case principal"
   },
-  "expertise": {
-    "title": "Nossa Expertise",
-    "webTitle": "Desenvolvimento Web",
-    "webDesc": "Aplicações Full Stack rápidas, seguras e otimizadas para SEO.",
-    "mobileTitle": "Ecossistema Mobile",
-    "mobileDesc": "Soluções nativas e multiplataforma com foco em performance.",
-    "devopsTitle": "Infraestrutura & DevOps",
-    "devopsDesc": "Hospedagem, CI/CD, conteinerização e arquitetura em nuvem."
+  "proof": {
+    "title": "Foco operacional",
+    "subtitle": "Produção, integração e entrega sustentável.",
+    "status": "Ativo",
+    "items": [
+      {
+        "value": "5 anos",
+        "label": "atuando em produto digital em produção na Climatempo"
+      },
+      {
+        "value": "Next.js + PHP/Twig",
+        "label": "navegando entre arquitetura moderna, legado e integrações"
+      },
+      {
+        "value": "SEO, APIs e Infra",
+        "label": "com foco em performance, deploy e evolução sustentável"
+      }
+    ]
   },
-  "experience": {
-    "title": "Experiência Profissional",
-    "climatempoTitle": "Portal Climatempo",
-    "climatempoRole": "Desenvolvedor Full Stack",
-    "climatempoDesc": "Manutenção e evolução de código legado (PHP/Twig) e integração via API REST com portais Next.js. Atuação focada em análise crítica, adaptação de componentes UI modernos, estruturação inicial de rotas e suporte em AdTech/SEO.",
-    "agroclimaTitle": "Projeto Agroclima & Defesa Civil",
-    "agroclimaRole": "Arquitetura e Desenvolvimento",
-    "agroclimaDesc": "Participação chave na concepção do Agroclima, atuando em UI, API (BFF) e pipeline CI/CD. No sistema da Defesa Civil, foco em otimização colaborativa de performance e integração arquitetural entre o Next.js moderno e a infraestrutura PHP legada."
+  "projects": {
+    "eyebrow": "Projetos em produção",
+    "title": "Case principal",
+    "lead": "Minha principal prova hoje é a atuação contínua em ambientes reais de produto, com responsabilidade sobre evolução técnica, integrações e entrega.",
+    "badge": "Case em produção",
+    "caseCta": "Ler case completo",
+    "primaryTitle": "Climatempo",
+    "primaryRole": "Atuação PJ • quase 5 anos de casa",
+    "primarySummary": "Atuo na manutenção e evolução de frentes web da Climatempo, navegando entre stack moderna e legado com foco em integrações, SEO técnico, UI e sustentação de produto.",
+    "contextTitle": "Contexto",
+    "contextBody": "Produto em operação real, com dependências legadas, múltiplas integrações e necessidade constante de evolução sem comprometer a estabilidade da entrega.",
+    "responsibilitiesTitle": "Atuação",
+    "responsibilitiesItems": [
+      "Manutenção evolutiva de frentes web em produção",
+      "Integração via API entre camadas e portais",
+      "Adaptação de interfaces e suporte à evolução de rotas",
+      "Apoio técnico para SEO, AdTech e consistência de entrega"
+    ],
+    "technicalTitle": "Recorte técnico",
+    "technicalItems": [
+      "Next.js, PHP/Twig e integração com WordPress API",
+      "Convivência entre arquitetura moderna e legado",
+      "Atenção a performance, rastreabilidade e manutenção"
+    ],
+    "impactTitle": "O que essa experiência demonstra",
+    "impactEyebrow": "Por que isso importa",
+    "impactItems": [
+      "Capacidade de evoluir produto real sem romper a operação",
+      "Leitura crítica de legado e integração com arquitetura moderna",
+      "Autonomia para atuar entre frontend, APIs e infraestrutura"
+    ],
+    "secondaryEyebrow": "No mesmo ecossistema",
+    "secondaryTitle": "Agroclima & Defesa Civil",
+    "secondarySummary": "Projetos secundários dentro do ecossistema Climatempo, com participação em UI, BFF/API, pipeline CI/CD e integração entre aplicações Next.js e infraestrutura legada."
+  },
+  "caseStudy": {
+    "backToHome": "Voltar para o início",
+    "eyebrow": "Case principal",
+    "title": "Climatempo",
+    "summary": "Atuação contínua em produto digital em produção, com foco em evolução web, integrações, SEO técnico e sustentação entre stack moderna e legado.",
+    "statusLabel": "Escopo recorrente",
+    "statusValue": "Atuação PJ em ambiente real de produto",
+    "facts": [
+      {
+        "label": "Duração",
+        "value": "Quase 5 anos"
+      },
+      {
+        "label": "Stack recorrente",
+        "value": "Next.js + PHP/Twig"
+      },
+      {
+        "label": "Foco técnico",
+        "value": "APIs, SEO, UI e sustentação"
+      },
+      {
+        "label": "Contexto",
+        "value": "Produto em produção com legado e integrações"
+      }
+    ],
+    "overviewTitle": "Contexto do case",
+    "overviewBody": "A Climatempo exige evolução contínua em frentes web que convivem com legado, integrações e dependências já estabelecidas. O trabalho pede leitura cuidadosa do ambiente, adaptação progressiva e capacidade de entregar sem comprometer a operação em produção.",
+    "responsibilitiesTitle": "Responsabilidades",
+    "responsibilities": [
+      "Manutenção evolutiva de frentes web em produção",
+      "Integração via API entre portais, CMS e camadas de aplicação",
+      "Ajustes de interface, rotas e sustentação técnica de produto",
+      "Apoio em SEO técnico, AdTech e consistência de entrega"
+    ],
+    "technicalTitle": "Recorte técnico",
+    "technical": [
+      "Trabalho entre Next.js, PHP/Twig e integrações com WordPress API",
+      "Convivência diária com arquitetura moderna e infraestrutura legada",
+      "Atenção a performance, rastreabilidade e manutenção futura"
+    ],
+    "operationsTitle": "Leitura operacional",
+    "operations": [
+      "Prioridade para evolução incremental em vez de ruptura",
+      "Decisão técnica orientada por estabilidade, contexto e custo de manutenção",
+      "Atuação entre frontend, integração e infraestrutura quando necessário"
+    ],
+    "ecosystemEyebrow": "Projetos relacionados",
+    "ecosystemTitle": "Agroclima & Defesa Civil",
+    "ecosystemBody": "Dentro do mesmo ecossistema, também participei de frentes ligadas a Agroclima e Defesa Civil, colaborando em UI, BFF/API, pipeline CI/CD e integração entre aplicações Next.js e infraestrutura existente.",
+    "proofTitle": "O que este case demonstra",
+    "proofItems": [
+      "Capacidade de evoluir produto real sem comprometer a operação",
+      "Boa leitura de legado e integração incremental com stack moderna",
+      "Autonomia para atuar entre desenvolvimento web, APIs e infraestrutura"
+    ],
+    "ctaEyebrow": "Próximo passo",
+    "ctaTitle": "Se você precisa evoluir um produto real, esse é o tipo de trabalho em que eu encaixo melhor.",
+    "ctaBody": "Meu foco é assumir escopos técnicos enxutos, com leitura de contexto, proposta viável e entrega em produção sem inflar complexidade.",
+    "ctaButton": "Falar sobre seu projeto"
+  },
+  "services": {
+    "eyebrow": "Serviços",
+    "title": "Como eu atuo",
+    "subtitle": "Meu foco é ajudar pequenas empresas e projetos enxutos a tirar produtos do papel, estabilizar sistemas existentes e evoluir software web com acabamento técnico.",
+    "items": [
+      {
+        "title": "Desenvolvimento web",
+        "description": "Landing pages, sites institucionais, portais e interfaces sob medida com foco em clareza, performance e manutenção simples.",
+        "tags": ["Next.js", "React", "TypeScript"]
+      },
+      {
+        "title": "Integrações e BFF/API",
+        "description": "Integração com CMS, APIs externas, camadas BFF e fluxos de dados para produtos que precisam conversar com outros sistemas.",
+        "tags": ["REST", "BFF", "WordPress API"]
+      },
+      {
+        "title": "SEO técnico, performance e infraestrutura",
+        "description": "Ajustes de entrega, deploy com Docker, proxy reverso e organização técnica para sites e aplicações em produção.",
+        "tags": ["SEO", "Docker", "Cloudflare"]
+      }
+    ]
+  },
+  "process": {
+    "eyebrow": "Processo",
+    "title": "Como eu conduzo um projeto",
+    "subtitle": "Para contratos curtos e freelas técnicos, meu objetivo é reduzir ambiguidade cedo, propor um recorte viável e entregar com visibilidade do início ao fim.",
+    "steps": [
+      {
+        "title": "Leitura de contexto",
+        "description": "Entendo o problema, o estágio do produto, as limitações do ambiente e o que realmente precisa entrar no escopo."
+      },
+      {
+        "title": "Recorte técnico viável",
+        "description": "Traduzo a demanda em uma proposta objetiva, com prioridades claras, trade-offs explícitos e risco controlado."
+      },
+      {
+        "title": "Implementação incremental",
+        "description": "Entrego em etapas curtas, mantendo o projeto funcional, testável e próximo da realidade de produção."
+      },
+      {
+        "title": "Entrega e continuidade",
+        "description": "Fecho com validação, documentação do essencial e um caminho claro para manutenção ou evolução futura."
+      }
+    ],
+    "principlesTitle": "O que você pode esperar",
+    "principles": [
+      "Comunicação direta, sem inflar escopo",
+      "Foco em solução viável e manutenção futura",
+      "Prioridade para clareza técnica, performance e estabilidade"
+    ],
+    "fitTitle": "Melhor encaixe",
+    "fitItems": [
+      "Sites institucionais e landing pages com acabamento técnico",
+      "Integrações pontuais, BFF/API e evolução de fluxos existentes",
+      "Ajustes de performance, SEO técnico e organização de deploy"
+    ]
+  },
+  "about": {
+    "eyebrow": "Sobre",
+    "title": "Gabriel Vancini",
+    "cardEyebrow": "Princípios de atuação",
+    "paragraphs": [
+      "Atuo como desenvolvedor full stack com ênfase em desenvolvimento web, integrações e ambientes de produção. Meu recorte é prático: entender o contexto, escolher uma solução viável e entregar com cuidado técnico.",
+      "Tenho mais afinidade com projetos enxutos e contratos curtos, especialmente quando existe a necessidade de evoluir um sistema real sem inflar escopo, complexidade ou operação."
+    ],
+    "highlights": [
+      "Visão de produto, código e operação",
+      "Boa leitura de contexto legado e integração incremental",
+      "Execução pragmática com foco em clareza e manutenção"
+    ]
   },
   "lab": {
-    "title": "Laboratório & Projetos",
-    "subtitle": "Iniciativas open-source e experimentações com novas tecnologias em desenvolvimento.",
-    "badgeSoon": "Em Breve",
-    "badgeActive": "Ativo",
-    "badgeWip": "WIP",
-    "newsTitle": "News Aggregator API",
-    "newsDesc": "Backend focado em web scraping para agregar notícias de cultura pop, animes e games, processando dados em tempo real.",
-    "aiTitle": "Self-Hosted AI & Homelab",
-    "aiDesc": "Infraestrutura de servidor local baseada em Docker rodando proxy reverso e instâncias privadas de Large Language Models.",
-    "tcgTitle": "TCG Tournament Manager",
-    "tcgDesc": "Plataforma web para organização de chaves, gestão de inscrições e acompanhamento de brackets em torneios locais de Trading Card Games."
+    "eyebrow": "Laboratório",
+    "title": "Prova técnica secundária, com curadoria",
+    "subtitle": "O laboratório reúne experimentos publicados e estudos práticos que uso para demonstrar raciocínio técnico, organização e cuidado com execução.",
+    "cards": [
+      {
+        "title": "Challenges e simulações",
+        "description": "Implementações visuais em Canvas e TypeScript publicadas como demos técnicas."
+      },
+      {
+        "title": "Homelab e self-hosting",
+        "description": "Infraestrutura pessoal com Docker, Portainer, proxy reverso e serviços privados usados para estudo e operação real."
+      }
+    ],
+    "cta": "Explorar laboratório"
   },
   "footer": {
-    "title": "Pronto para iniciar seu projeto?",
-    "subtitle": "Entre em contato para conversarmos sobre a melhor solução técnica para o seu negócio ou ideia.",
+    "eyebrow": "Contato",
+    "title": "Vamos conversar sobre o seu projeto?",
+    "subtitle": "Se você precisa de desenvolvimento web, integrações, SEO técnico ou apoio para evoluir um sistema existente, entre em contato.",
+    "availability": "Disponível para freelas pontuais e projetos enxutos.",
+    "email": "contato@cybersenpaiworks.com.br",
     "rights": "Cyber Senpai Works. Todos os direitos reservados.",
     "location": "Santo André, SP - Brasil"
   },
   "challenges": {
-    "title": "Coding Challenges",
-    "subtitle": "Uma coleção de desafios clássicos de programação e algoritmos implementados do zero utilizando HTML5 Canvas e TypeScript. Uma homenagem ao canal The Coding Train.",
-    "statusImplemented": "Implementado",
-    "statusSoon": "Em Breve",
-    "backToHome": "Voltar para o Início",
-    "backToGrid": "Voltar aos Desafios",
-    "tabSolution": "Minha Solução",
-    "tabReference": "Referência Original",
-    "viewVideo": "Assistir no YouTube",
-    "loadingSimulation": "Inicializando Simulação de Alto Desempenho...",
-    "engine": "HTML5 Canvas + Vanilla TS",
-    "originalReferenceDesc": "Confira a inspiração original e a explicação teórica deste desafio feita pelo mestre Daniel Shiffman."
+    "title": "Laboratório",
+    "subtitle": "Experimentos visuais, simulações e implementações curadas em HTML5 Canvas e TypeScript.",
+    "intro": "Esta área secundária do portfólio reúne demos publicadas para demonstrar raciocínio técnico, modelagem e cuidado com execução.",
+    "implementedLabel": "Demos publicados",
+    "statusImplemented": "Publicado",
+    "statusSoon": "Em preparo",
+    "backToHome": "Voltar para o início",
+    "backToGrid": "Voltar ao laboratório",
+    "tabSolution": "Implementação",
+    "tabReference": "Referência original",
+    "viewVideo": "Abrir referência no YouTube",
+    "loadingSimulation": "Inicializando simulação...",
+    "engine": "HTML5 Canvas + TypeScript",
+    "originalReferenceDesc": "Referência original do The Coding Train usada como base conceitual para este experimento."
   },
   "infra": {
-    "button": "Ver Arquitetura & CI/CD",
-    "title": "Arquitetura de Deploy",
-    "pipeline": "Pipeline Automatizada",
-    "stack": "Stack Tecnológica",
-    "version": "Versão do Build",
+    "button": "Notas técnicas & CI/CD",
+    "title": "Arquitetura de deploy",
+    "pipeline": "Pipeline automatizada",
+    "stack": "Contexto técnico",
+    "version": "Versão do build",
     "deployedAt": "Deploy realizado em",
-    "environment": "Ambiente de Execução",
-    "flow": "Fluxo do Código",
+    "environment": "Ambiente de execução",
+    "flow": "Fluxo do código",
     "source": "Repositório",
-    "ci": "Integração Contínua",
-    "registry": "Registro de Imagens",
+    "ci": "Integração contínua",
+    "registry": "Registro de imagens",
     "host": "Orquestração",
-    "edge": "Gateway & Segurança",
-    "description": "Este desafio foi versionado via Git e entregue através de uma esteira automatizada de CI/CD para o meu cluster privado.",
+    "edge": "Gateway & segurança",
+    "description": "Esta demonstração integra o laboratório técnico do portal e é publicada pela mesma esteira automatizada usada no restante do projeto.",
     "serviceRepo": "Repositório GitHub",
     "serviceCi": "CI/CD com GitHub Actions",
     "serviceHost": "Docker Standalone & Portainer",

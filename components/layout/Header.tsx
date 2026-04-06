@@ -45,38 +45,41 @@ export default function Header({ lang, dict }: { lang: Locale, dict: Dictionary 
 
   return (
     <>
-      <header className="container mx-auto px-6 py-8 flex justify-between items-center relative z-40">
-        <Link href={`/${lang}`} className="text-2xl font-bold text-cyan-400 tracking-tighter hover:opacity-80 transition-opacity">
-          CyberSenpai<span className="text-white">Works</span>.
-        </Link>
-        <nav className="hidden md:flex items-center gap-6">
-          <Link href={`/${lang}#experiencia`} className="text-sm font-medium hover:text-cyan-400 transition-colors">{dict.nav.experience}</Link>
-          <Link href={`/${lang}#laboratorio`} className="text-sm font-medium hover:text-cyan-400 transition-colors">{dict.nav.lab}</Link>
-          <Link href={`/${lang}/challenges`} className="text-sm font-medium text-amber-400 hover:text-amber-300 transition-colors">{dict.nav.challenges}</Link>
-          <Link href={`/${lang}#contato`} className="text-sm font-medium hover:text-cyan-400 transition-colors">{dict.nav.contact}</Link>
-          <div className="h-4 w-px bg-slate-700"></div>
-          <Link href={getLanguagePath('pt')} className={`text-xs font-bold ${lang === 'pt' ? 'text-cyan-400' : 'text-slate-500 hover:text-white'}`}>PT</Link>
-          <Link href={getLanguagePath('en')} className={`text-xs font-bold ${lang === 'en' ? 'text-cyan-400' : 'text-slate-500 hover:text-white'}`}>EN</Link>
-          <div className="h-4 w-px bg-slate-700"></div>
-          <a href="https://github.com/cybersenpaiworks" target="_blank" rel="noreferrer" className="text-slate-400 hover:text-white transition-colors">
-            GitHub
-          </a>
-          <a href="https://www.linkedin.com/in/gabriel-r-vancini" target="_blank" rel="noreferrer" className="text-slate-400 hover:text-cyan-400 transition-colors">
-            LinkedIn
-          </a>
-        </nav>
-        <button
-          type="button"
-          onClick={() => setIsMenuOpen((currentValue) => !currentValue)}
-          aria-expanded={isMenuOpen}
-          aria-controls="mobile-navigation"
-          aria-label={mobileMenuLabel}
-          className="md:hidden inline-flex items-center gap-2 rounded-full border border-slate-700 bg-slate-900/80 px-4 py-2 text-sm font-semibold text-slate-100 backdrop-blur transition-colors hover:border-cyan-400 hover:text-cyan-400"
-        >
-          <span>{mobileMenuLabel}</span>
-          <span aria-hidden="true" className="text-cyan-400">{isMenuOpen ? '×' : '☰'}</span>
-        </button>
-      </header>
+      <div className="sticky top-0 z-50 border-b border-slate-800/80 bg-slate-950/45 backdrop-blur-xl">
+        <header className="container mx-auto flex items-center justify-between px-6 py-5">
+          <Link href={`/${lang}`} className="text-lg font-bold tracking-tight text-cyan-400 transition-opacity hover:opacity-80 md:text-xl">
+            CyberSenpai<span className="text-white">Works</span>.
+          </Link>
+          <nav className="hidden items-center gap-5 md:flex">
+            <Link href={`/${lang}#projects`} className="text-sm font-medium text-slate-300 transition-colors hover:text-cyan-400">{dict.nav.projects}</Link>
+            <Link href={`/${lang}#services`} className="text-sm font-medium text-slate-300 transition-colors hover:text-cyan-400">{dict.nav.services}</Link>
+            <Link href={`/${lang}#about`} className="text-sm font-medium text-slate-300 transition-colors hover:text-cyan-400">{dict.nav.about}</Link>
+            <Link href={`/${lang}/challenges`} className="text-sm font-medium text-amber-400 transition-colors hover:text-amber-300">{dict.nav.lab}</Link>
+            <Link href={`/${lang}#contact`} className="text-sm font-medium text-slate-300 transition-colors hover:text-cyan-400">{dict.nav.contact}</Link>
+            <div className="h-4 w-px bg-slate-700"></div>
+            <Link href={getLanguagePath('pt')} className={`text-xs font-bold ${lang === 'pt' ? 'text-cyan-400' : 'text-slate-500 hover:text-white'}`}>PT</Link>
+            <Link href={getLanguagePath('en')} className={`text-xs font-bold ${lang === 'en' ? 'text-cyan-400' : 'text-slate-500 hover:text-white'}`}>EN</Link>
+            <div className="h-4 w-px bg-slate-700"></div>
+            <a href="https://github.com/cybersenpaiworks" target="_blank" rel="noreferrer" className="text-sm text-slate-500 transition-colors hover:text-white">
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/gabriel-r-vancini" target="_blank" rel="noreferrer" className="text-sm text-slate-500 transition-colors hover:text-cyan-400">
+              LinkedIn
+            </a>
+          </nav>
+          <button
+            type="button"
+            onClick={() => setIsMenuOpen((currentValue) => !currentValue)}
+            aria-expanded={isMenuOpen}
+            aria-controls="mobile-navigation"
+            aria-label={mobileMenuLabel}
+            className="inline-flex items-center gap-2 rounded-full border border-slate-700 bg-slate-900/80 px-4 py-2 text-sm font-semibold text-slate-100 backdrop-blur transition-colors hover:border-cyan-400 hover:text-cyan-400 md:hidden"
+          >
+            <span>{mobileMenuLabel}</span>
+            <span aria-hidden="true" className="text-cyan-400">{isMenuOpen ? '×' : '☰'}</span>
+          </button>
+        </header>
+      </div>
 
       {isMenuOpen && (
         <div className="md:hidden">
@@ -94,16 +97,19 @@ export default function Header({ lang, dict }: { lang: Locale, dict: Dictionary 
             className="fixed inset-x-6 top-24 z-40 rounded-3xl border border-slate-700 bg-slate-900/95 p-6 shadow-[0_20px_80px_rgba(2,6,23,0.65)]"
           >
             <nav className="flex flex-col gap-3">
-              <Link onClick={closeMenu} href={`/${lang}#experiencia`} className="rounded-2xl border border-slate-800 bg-slate-800/70 px-4 py-3 text-sm font-medium text-slate-100 transition-colors hover:border-cyan-500/60 hover:text-cyan-400">
-                {dict.nav.experience}
+              <Link onClick={closeMenu} href={`/${lang}#projects`} className="rounded-2xl border border-slate-800 bg-slate-800/70 px-4 py-3 text-sm font-medium text-slate-100 transition-colors hover:border-cyan-500/60 hover:text-cyan-400">
+                {dict.nav.projects}
               </Link>
-              <Link onClick={closeMenu} href={`/${lang}#laboratorio`} className="rounded-2xl border border-slate-800 bg-slate-800/70 px-4 py-3 text-sm font-medium text-slate-100 transition-colors hover:border-cyan-500/60 hover:text-cyan-400">
-                {dict.nav.lab}
+              <Link onClick={closeMenu} href={`/${lang}#services`} className="rounded-2xl border border-slate-800 bg-slate-800/70 px-4 py-3 text-sm font-medium text-slate-100 transition-colors hover:border-cyan-500/60 hover:text-cyan-400">
+                {dict.nav.services}
+              </Link>
+              <Link onClick={closeMenu} href={`/${lang}#about`} className="rounded-2xl border border-slate-800 bg-slate-800/70 px-4 py-3 text-sm font-medium text-slate-100 transition-colors hover:border-cyan-500/60 hover:text-cyan-400">
+                {dict.nav.about}
               </Link>
               <Link onClick={closeMenu} href={`/${lang}/challenges`} className="rounded-2xl border border-amber-500/30 bg-slate-800/70 px-4 py-3 text-sm font-medium text-amber-300 transition-colors hover:border-amber-400 hover:text-amber-200">
-                {dict.nav.challenges}
+                {dict.nav.lab}
               </Link>
-              <Link onClick={closeMenu} href={`/${lang}#contato`} className="rounded-2xl border border-slate-800 bg-slate-800/70 px-4 py-3 text-sm font-medium text-slate-100 transition-colors hover:border-cyan-500/60 hover:text-cyan-400">
+              <Link onClick={closeMenu} href={`/${lang}#contact`} className="rounded-2xl border border-slate-800 bg-slate-800/70 px-4 py-3 text-sm font-medium text-slate-100 transition-colors hover:border-cyan-500/60 hover:text-cyan-400">
                 {dict.nav.contact}
               </Link>
             </nav>

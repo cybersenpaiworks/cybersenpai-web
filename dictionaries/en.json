@@ -1,86 +1,262 @@
 {
   "nav": {
-    "experience": "Experience",
-    "lab": "Laboratory",
+    "projects": "Projects",
+    "services": "Services",
+    "about": "About",
+    "lab": "Lab",
     "contact": "Contact",
-    "challenges": "Challenges",
     "menu": "Menu",
     "closeMenu": "Close menu"
   },
   "hero": {
-    "title1": "Solving problems",
-    "title2": "through ",
-    "titleHighlight": "Technology",
-    "subtitle": "Development studio focused on creating modern web applications, scalable platforms, and high-performance mobile experiences.",
-    "cta": "Let's Talk"
+    "eyebrow": "Gabriel Vancini • Web development, BFF/API and modern infrastructure",
+    "title": "Web development focused on performance, integration, and production-ready delivery.",
+    "subtitle": "Cyber Senpai Works is my independent studio for websites, web applications, and technical product evolution. I work with Next.js, APIs, technical SEO, and incremental modernization of web systems.",
+    "primaryCta": "Discuss your project",
+    "secondaryCta": "View main case"
   },
-  "expertise": {
-    "title": "Our Expertise",
-    "webTitle": "Web Development",
-    "webDesc": "Fast, secure, and SEO-optimized Full Stack applications.",
-    "mobileTitle": "Mobile Ecosystem",
-    "mobileDesc": "Native and cross-platform solutions focused on performance.",
-    "devopsTitle": "Infrastructure & DevOps",
-    "devopsDesc": "Hosting, CI/CD, containerization, and cloud architecture."
+  "proof": {
+    "title": "Operating focus",
+    "subtitle": "Production, integration and sustainable delivery.",
+    "status": "Active",
+    "items": [
+      {
+        "value": "5 years",
+        "label": "working on digital products in production at Climatempo"
+      },
+      {
+        "value": "Next.js + PHP/Twig",
+        "label": "moving between modern architecture, legacy systems, and integrations"
+      },
+      {
+        "value": "SEO, APIs and Infra",
+        "label": "with focus on performance, deploys, and sustainable evolution"
+      }
+    ]
   },
-  "experience": {
-    "title": "Professional Experience",
-    "climatempoTitle": "Climatempo Portal",
-    "climatempoRole": "Full Stack Developer",
-    "climatempoDesc": "Maintenance and evolution of legacy code (PHP/Twig) and integration via REST API with Next.js portals. Focused on critical analysis, adaptation of modern UI components, initial route structuring, and AdTech/SEO support.",
-    "agroclimaTitle": "Agroclima & Civil Defense Project",
-    "agroclimaRole": "Architecture and Development",
-    "agroclimaDesc": "Key participation in the conception of Agroclima, working on UI, API (BFF), and CI/CD pipeline. In the Civil Defense system, focused on collaborative performance optimization and architectural integration between modern Next.js and legacy PHP infrastructure."
+  "projects": {
+    "eyebrow": "Production work",
+    "title": "Main case",
+    "lead": "My strongest proof today is ongoing work in real product environments, with direct responsibility over technical evolution, integrations, and delivery.",
+    "badge": "Case in production",
+    "caseCta": "Read full case",
+    "primaryTitle": "Climatempo",
+    "primaryRole": "PJ engagement • nearly 5 years on the team",
+    "primarySummary": "I work on the maintenance and evolution of Climatempo web fronts, moving between modern stack and legacy systems with focus on integrations, technical SEO, UI, and product support.",
+    "contextTitle": "Context",
+    "contextBody": "A real production product with legacy dependencies, multiple integrations, and a constant need to evolve without compromising delivery stability.",
+    "responsibilitiesTitle": "Scope of work",
+    "responsibilitiesItems": [
+      "Evolutionary maintenance of production web fronts",
+      "API integration across layers and portals",
+      "Interface adaptation and support for route evolution",
+      "Technical support for SEO, AdTech, and delivery consistency"
+    ],
+    "technicalTitle": "Technical focus",
+    "technicalItems": [
+      "Next.js, PHP/Twig, and WordPress API integrations",
+      "Working between modern architecture and legacy systems",
+      "Attention to performance, traceability, and maintainability"
+    ],
+    "impactTitle": "What this experience proves",
+    "impactEyebrow": "Why it matters",
+    "impactItems": [
+      "Ability to evolve real products without breaking operations",
+      "Strong reading of legacy systems and integration with modern architecture",
+      "Autonomy across frontend, APIs, and infrastructure"
+    ],
+    "secondaryEyebrow": "Inside the same ecosystem",
+    "secondaryTitle": "Agroclima & Civil Defense",
+    "secondarySummary": "Secondary projects inside the Climatempo ecosystem, with participation in UI, BFF/API, CI/CD pipeline, and integration between Next.js applications and legacy infrastructure."
+  },
+  "caseStudy": {
+    "backToHome": "Back to home",
+    "eyebrow": "Main case",
+    "title": "Climatempo",
+    "summary": "Ongoing work on a production digital product, focused on web evolution, integrations, technical SEO, and support across modern stack and legacy systems.",
+    "statusLabel": "Recurring scope",
+    "statusValue": "PJ engagement in a real product environment",
+    "facts": [
+      {
+        "label": "Duration",
+        "value": "Nearly 5 years"
+      },
+      {
+        "label": "Recurring stack",
+        "value": "Next.js + PHP/Twig"
+      },
+      {
+        "label": "Technical focus",
+        "value": "APIs, SEO, UI, and support"
+      },
+      {
+        "label": "Context",
+        "value": "Production product with legacy systems and integrations"
+      }
+    ],
+    "overviewTitle": "Case context",
+    "overviewBody": "Climatempo requires continuous evolution across web fronts that coexist with legacy systems, integrations, and established dependencies. The work demands careful reading of the environment, progressive adaptation, and the ability to deliver without compromising production operations.",
+    "responsibilitiesTitle": "Responsibilities",
+    "responsibilities": [
+      "Evolutionary maintenance of production web fronts",
+      "API integration across portals, CMS, and application layers",
+      "UI adjustments, route support, and product-facing technical support",
+      "Support for technical SEO, AdTech, and delivery consistency"
+    ],
+    "technicalTitle": "Technical focus",
+    "technical": [
+      "Work across Next.js, PHP/Twig, and WordPress API integrations",
+      "Daily interaction between modern architecture and legacy infrastructure",
+      "Attention to performance, traceability, and future maintainability"
+    ],
+    "operationsTitle": "Operational lens",
+    "operations": [
+      "Priority on incremental evolution instead of disruptive rewrites",
+      "Technical decisions guided by stability, context, and maintenance cost",
+      "Ability to move across frontend, integration, and infrastructure when needed"
+    ],
+    "ecosystemEyebrow": "Related projects",
+    "ecosystemTitle": "Agroclima & Civil Defense",
+    "ecosystemBody": "Inside the same ecosystem, I also worked on initiatives connected to Agroclima and Civil Defense, contributing to UI, BFF/API, CI/CD pipeline, and integration between Next.js applications and the existing infrastructure.",
+    "proofTitle": "What this case proves",
+    "proofItems": [
+      "Ability to evolve a real product without compromising operations",
+      "Strong reading of legacy systems and incremental integration with modern stack",
+      "Autonomy across web development, APIs, and infrastructure"
+    ],
+    "ctaEyebrow": "Next step",
+    "ctaTitle": "If you need to evolve a real product, this is the kind of work where I fit best.",
+    "ctaBody": "My focus is taking on lean technical scopes with good context reading, a viable proposal, and production-ready delivery without inflating complexity.",
+    "ctaButton": "Discuss your project"
+  },
+  "services": {
+    "eyebrow": "Services",
+    "title": "How I work",
+    "subtitle": "My focus is helping small companies and lean projects launch products, stabilize existing systems, and evolve web software with solid technical quality.",
+    "items": [
+      {
+        "title": "Web development",
+        "description": "Landing pages, institutional sites, portals, and custom interfaces with focus on clarity, performance, and maintainability.",
+        "tags": ["Next.js", "React", "TypeScript"]
+      },
+      {
+        "title": "Integrations and BFF/API",
+        "description": "CMS integrations, external APIs, BFF layers, and data flows for products that need to connect with other systems.",
+        "tags": ["REST", "BFF", "WordPress API"]
+      },
+      {
+        "title": "Technical SEO, performance, and infrastructure",
+        "description": "Delivery tuning, Docker-based deploys, reverse proxy setups, and technical organization for production websites and applications.",
+        "tags": ["SEO", "Docker", "Cloudflare"]
+      }
+    ]
+  },
+  "process": {
+    "eyebrow": "Process",
+    "title": "How I run a project",
+    "subtitle": "For short engagements and technical freelance work, my goal is to reduce ambiguity early, define a viable scope, and deliver with visibility from start to finish.",
+    "steps": [
+      {
+        "title": "Context reading",
+        "description": "I understand the problem, the product stage, the environment constraints, and what truly belongs in scope."
+      },
+      {
+        "title": "Viable technical scope",
+        "description": "I translate the demand into an objective proposal with clear priorities, explicit trade-offs, and controlled risk."
+      },
+      {
+        "title": "Incremental implementation",
+        "description": "I deliver in short stages, keeping the project functional, testable, and close to production reality."
+      },
+      {
+        "title": "Delivery and continuity",
+        "description": "I close with validation, essential documentation, and a clear path for future maintenance or evolution."
+      }
+    ],
+    "principlesTitle": "What you can expect",
+    "principles": [
+      "Direct communication, without inflating scope",
+      "Focus on viable solutions and future maintainability",
+      "Priority on technical clarity, performance, and stability"
+    ],
+    "fitTitle": "Best fit",
+    "fitItems": [
+      "Institutional websites and landing pages with technical quality",
+      "Targeted integrations, BFF/API work, and evolution of existing flows",
+      "Performance tuning, technical SEO, and deploy organization"
+    ]
+  },
+  "about": {
+    "eyebrow": "About",
+    "title": "Gabriel Vancini",
+    "cardEyebrow": "Operating principles",
+    "paragraphs": [
+      "I work as a full stack developer with emphasis on web development, integrations, and production environments. My approach is practical: understand context, choose a viable solution, and deliver with technical care.",
+      "I am especially comfortable in lean projects and short-term engagements, particularly when a real system needs to evolve without inflating scope, complexity, or operations."
+    ],
+    "highlights": [
+      "Product, code, and operations mindset",
+      "Strong reading of legacy context and incremental integration",
+      "Pragmatic execution focused on clarity and maintainability"
+    ]
   },
   "lab": {
-    "title": "Laboratory & Projects",
-    "subtitle": "Open-source initiatives and experiments with new technologies in development.",
-    "badgeSoon": "Coming Soon",
-    "badgeActive": "Active",
-    "badgeWip": "WIP",
-    "newsTitle": "News Aggregator API",
-    "newsDesc": "Backend focused on web scraping to aggregate pop culture, anime, and gaming news, processing data in real time.",
-    "aiTitle": "Self-Hosted AI & Homelab",
-    "aiDesc": "Local server infrastructure based on Docker running a reverse proxy and private instances of Large Language Models.",
-    "tcgTitle": "TCG Tournament Manager",
-    "tcgDesc": "Web platform for bracket organization, registration management, and bracket tracking in local Trading Card Game tournaments."
+    "eyebrow": "Lab",
+    "title": "Curated technical proof, kept secondary",
+    "subtitle": "The lab gathers published experiments and practical studies that I use to demonstrate technical reasoning, organization, and execution quality.",
+    "cards": [
+      {
+        "title": "Challenges and simulations",
+        "description": "Visual implementations in Canvas and TypeScript published as technical demos."
+      },
+      {
+        "title": "Homelab and self-hosting",
+        "description": "Personal infrastructure with Docker, Portainer, reverse proxy, and private services used for study and real-world operation."
+      }
+    ],
+    "cta": "Explore the lab"
   },
   "footer": {
-    "title": "Ready to start your project?",
-    "subtitle": "Get in touch to discuss the best technical solution for your business or idea.",
+    "eyebrow": "Contact",
+    "title": "Want to talk about your project?",
+    "subtitle": "If you need web development, integrations, technical SEO, or support evolving an existing system, get in touch.",
+    "availability": "Available for short freelance engagements and lean projects.",
+    "email": "contato@cybersenpaiworks.com.br",
     "rights": "Cyber Senpai Works. All rights reserved.",
     "location": "Santo André, SP - Brazil"
   },
   "challenges": {
-    "title": "Coding Challenges",
-    "subtitle": "A collection of classic programming and algorithmic challenges implemented from scratch using HTML5 Canvas and TypeScript. A tribute to The Coding Train channel.",
-    "statusImplemented": "Implemented",
-    "statusSoon": "Coming Soon",
-    "backToHome": "Back to Home",
-    "backToGrid": "Back to Challenges",
-    "tabSolution": "My Solution",
-    "tabReference": "Original Reference",
-    "viewVideo": "Watch on YouTube",
-    "loadingSimulation": "Initializing High-Performance Simulation...",
-    "engine": "HTML5 Canvas + Vanilla TS",
-    "originalReferenceDesc": "Check out the original inspiration and theoretical explanation of this challenge by the master Daniel Shiffman."
+    "title": "Lab",
+    "subtitle": "Curated visual experiments, simulations, and implementations built with HTML5 Canvas and TypeScript.",
+    "intro": "This secondary area of the portfolio gathers published demos used to show technical reasoning, modeling, and execution quality.",
+    "implementedLabel": "Published demos",
+    "statusImplemented": "Published",
+    "statusSoon": "In progress",
+    "backToHome": "Back to home",
+    "backToGrid": "Back to the lab",
+    "tabSolution": "Implementation",
+    "tabReference": "Original reference",
+    "viewVideo": "Open reference on YouTube",
+    "loadingSimulation": "Initializing simulation...",
+    "engine": "HTML5 Canvas + TypeScript",
+    "originalReferenceDesc": "Original The Coding Train reference used as the conceptual base for this experiment."
   },
   "infra": {
-    "button": "View Architecture & CI/CD",
-    "title": "Deployment Architecture",
-    "pipeline": "Automated Pipeline",
-    "stack": "Technology Stack",
-    "version": "Build Version",
+    "button": "Technical notes & CI/CD",
+    "title": "Deployment architecture",
+    "pipeline": "Automated pipeline",
+    "stack": "Technical context",
+    "version": "Build version",
     "deployedAt": "Deployed at",
-    "environment": "Runtime Environment",
-    "flow": "Code Flow",
-    "source": "Source Repository",
-    "ci": "Continuous Integration",
-    "registry": "Image Registry",
+    "environment": "Runtime environment",
+    "flow": "Code flow",
+    "source": "Repository",
+    "ci": "Continuous integration",
+    "registry": "Image registry",
     "host": "Orchestration",
-    "edge": "Gateway & Security",
-    "description": "This challenge was versioned via Git and delivered through an automated CI/CD pipeline to my private cluster.",
-    "serviceRepo": "GitHub Repository",
+    "edge": "Gateway & security",
+    "description": "This demo is part of the portal technical lab and is published through the same automated delivery flow used by the rest of the project.",
+    "serviceRepo": "GitHub repository",
     "serviceCi": "GitHub Actions CI/CD",
     "serviceHost": "Docker Standalone & Portainer",
     "serviceEdge": "Nginx Proxy Manager & Cloudflare"
