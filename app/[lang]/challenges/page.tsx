@@ -7,6 +7,7 @@ import Header from '../../../components/layout/Header';
 import Footer from '../../../components/layout/Footer';
 import ChallengeCard from '../../../components/ChallengeCard';
 import { challenges } from '../../../data/challenges';
+import { listedImplementedChallengeIds } from '../../../data/implementedChallenges';
 
 export async function generateMetadata({
   params,
@@ -32,7 +33,9 @@ export default async function ChallengesPage({
 }) {
   const { lang } = await params;
   const dict = await getDictionary(lang);
-  const publishedChallenges = challenges.filter((challenge) => challenge.implemented);
+  const publishedChallenges = challenges.filter(
+    (challenge) => challenge.implemented && listedImplementedChallengeIds.has(challenge.id)
+  );
 
   return (
     <div className="min-h-screen bg-slate-900 text-slate-100 font-sans selection:bg-cyan-500 selection:text-white scroll-smooth">

@@ -8,6 +8,7 @@ interface ImplementedChallengeDefinition {
   summary: Record<Locale, string>;
   keywords: string[];
   tags: string[];
+  listed?: boolean;
 }
 
 export const implementedChallenges = [
@@ -22,6 +23,7 @@ export const implementedChallenges = [
     },
     keywords: ['Starfield', 'Canvas Animation', 'Particles', 'Depth Simulation'],
     tags: ['HTML5 Canvas', 'Animation', 'Particles'],
+    listed: true,
   },
   {
     id: 2,
@@ -34,6 +36,7 @@ export const implementedChallenges = [
     },
     keywords: ['Menger Sponge', 'Fractal', 'Voxel', '3D Projection'],
     tags: ['HTML5 Canvas', 'Fractal', '3D'],
+    listed: false,
   },
 ] as const satisfies readonly ImplementedChallengeDefinition[];
 
@@ -49,8 +52,14 @@ const implementedChallengesBySlug = new Map<string, ImplementedChallenge>(
   implementedChallenges.map((challenge) => [challenge.slug, challenge])
 );
 
-export const implementedChallengeIds = new Set(
+export const implementedChallengeIds = new Set<number>(
   implementedChallenges.map((challenge) => challenge.id)
+);
+
+export const listedImplementedChallengeIds = new Set<number>(
+  implementedChallenges
+    .filter((challenge) => challenge.listed !== false)
+    .map((challenge) => challenge.id)
 );
 
 export function getImplementedChallengeById(id: number) {
