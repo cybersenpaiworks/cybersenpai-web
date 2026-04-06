@@ -22,15 +22,15 @@
     "items": [
       {
         "value": "5 years",
-        "label": "working on digital products in production at Climatempo"
+        "label": "Working on digital products in production at Climatempo"
       },
       {
         "value": "Next.js + PHP/Twig",
-        "label": "moving between modern architecture, legacy systems, and integrations"
+        "label": "Moving between modern architecture, legacy systems, and integrations"
       },
       {
         "value": "SEO, APIs and Infra",
-        "label": "with focus on performance, deploys, and sustainable evolution"
+        "label": "With focus on performance, deploys, and sustainable evolution"
       }
     ]
   },
@@ -65,9 +65,10 @@
       "Strong reading of legacy systems and integration with modern architecture",
       "Autonomy across frontend, APIs, and infrastructure"
     ],
-    "secondaryEyebrow": "Inside the same ecosystem",
-    "secondaryTitle": "Agroclima & Civil Defense",
-    "secondarySummary": "Secondary projects inside the Climatempo ecosystem, with participation in UI, BFF/API, CI/CD pipeline, and integration between Next.js applications and legacy infrastructure."
+    "secondaryEyebrow": "Public technical study",
+    "secondaryTitle": "Strangler Fig Migration Demo",
+    "secondarySummary": "A public PoC for incremental legacy modernization, showing PHP/Yii and Node.js + Next.js coexisting behind the same URL with nginx as the gateway.",
+    "secondaryCta": "View technical case"
   },
   "caseStudy": {
     "backToHome": "Back to home",
@@ -128,6 +129,76 @@
     "ctaTitle": "If you need to evolve a real product, this is the kind of work where I fit best.",
     "ctaBody": "My focus is taking on lean technical scopes with good context reading, a viable proposal, and production-ready delivery without inflating complexity.",
     "ctaButton": "Discuss your project"
+  },
+  "stranglerCase": {
+    "backToHome": "Back to home",
+    "eyebrow": "Technical case",
+    "title": "Strangler Fig Migration Demo",
+    "summary": "A public technical study of incrementally migrating a legacy PHP/Yii read path to Node.js + Next.js while keeping the public URL stable through nginx.",
+    "visualsEyebrow": "Visual proof",
+    "visualsTitle": "The behavior gap becomes visible in the interface itself",
+    "visualsSubtitle": "Instead of relying only on architecture diagrams, the study shows the contrast between legacy polling, the modern stream, and canonical-route cutover in a public interface.",
+    "visuals": [
+      {
+        "title": "Direct comparison between legacy and modern paths",
+        "description": "The same business action exposes the delay of the legacy snapshot and the immediate response of the modern stream in the same dashboard.",
+        "alt": "Dashboard screenshot comparing the legacy PHP panel with the modern real-time panel."
+      },
+      {
+        "title": "Live cutover while keeping the same public URL",
+        "description": "The gateway keeps the canonical route stable while switching the upstream between legacy and modern to demonstrate the strangler strategy.",
+        "alt": "Dashboard screenshot showing the live cutover block with the same public route served by different upstreams."
+      }
+    ],
+    "statusLabel": "Format",
+    "statusValue": "Public PoC with live demo and open repository",
+    "facts": [
+      {
+        "label": "Goal",
+        "value": "Show incremental migration without changing the public URL"
+      },
+      {
+        "label": "Legacy path",
+        "value": "PHP/Yii with synchronous polling and artificial delay"
+      },
+      {
+        "label": "Modern path",
+        "value": "Node.js + Socket.IO + Next.js in real time"
+      },
+      {
+        "label": "Gateway",
+        "value": "nginx with reversible cutover between upstreams"
+      }
+    ],
+    "proofTitle": "What this case demonstrates",
+    "proofItems": [
+      "Legacy and modern stack coexist behind the same public contract",
+      "Canonical route cutover stays reversible without breaking the client URL",
+      "The UX gain becomes visible when synchronous polling gives way to real-time events"
+    ],
+    "overviewTitle": "Study context",
+    "overviewBody": "The goal was to make a common modernization story visible: a legacy PHP/Yii controller still serves business data through polling, while a modern Node.js implementation publishes the same event immediately. Instead of talking about architecture in the abstract, the demo shows the behavioral gap side by side.",
+    "problemTitle": "Modeled problem",
+    "problemBody": "Full rewrites are expensive and risky when the public route is already in use. This study starts from that scenario: keep the canonical URL stable, preserve coexistence between implementations, and allow the read path to move gradually.",
+    "technicalTitle": "Technical slice",
+    "technical": [
+      "Next.js dashboard comparing the legacy snapshot with the modern stream",
+      "Node.js/TypeScript service with Socket.IO, Postgres, and Redis",
+      "Legacy PHP/Yii layer with HTTP polling, MySQL, and simulated latency",
+      "nginx gateway handling the canonical route and live cutover"
+    ],
+    "operationsTitle": "Operational reading",
+    "operations": [
+      "The public URL remains the same throughout the migration",
+      "The gateway decides which upstream serves the canonical route",
+      "The same business event feeds both read paths",
+      "Cutover can move forward to modern or back to legacy with low friction"
+    ],
+    "ctaEyebrow": "Explore",
+    "ctaTitle": "See the live demo and the repository",
+    "ctaBody": "This study is useful for conversations about incremental modernization, PHP legacy systems, reverse-proxy gateways, and a safer transition into a Node.js/Next.js stack.",
+    "liveDemoButton": "Open live demo",
+    "repoButton": "Open repository"
   },
   "services": {
     "eyebrow": "Services",

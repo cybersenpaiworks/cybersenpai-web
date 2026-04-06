@@ -22,15 +22,15 @@
     "items": [
       {
         "value": "5 anos",
-        "label": "atuando em produto digital em produção na Climatempo"
+        "label": "Atuando em produto digital em produção na Climatempo"
       },
       {
         "value": "Next.js + PHP/Twig",
-        "label": "navegando entre arquitetura moderna, legado e integrações"
+        "label": "Navegando entre arquitetura moderna, legado e integrações"
       },
       {
         "value": "SEO, APIs e Infra",
-        "label": "com foco em performance, deploy e evolução sustentável"
+        "label": "Com foco em performance, deploy e evolução sustentável"
       }
     ]
   },
@@ -65,9 +65,10 @@
       "Leitura crítica de legado e integração com arquitetura moderna",
       "Autonomia para atuar entre frontend, APIs e infraestrutura"
     ],
-    "secondaryEyebrow": "No mesmo ecossistema",
-    "secondaryTitle": "Agroclima & Defesa Civil",
-    "secondarySummary": "Projetos secundários dentro do ecossistema Climatempo, com participação em UI, BFF/API, pipeline CI/CD e integração entre aplicações Next.js e infraestrutura legada."
+    "secondaryEyebrow": "Estudo técnico público",
+    "secondaryTitle": "Strangler Fig Migration Demo",
+    "secondarySummary": "PoC pública sobre migração incremental de legado, mostrando PHP/Yii e Node.js + Next.js coexistindo atrás da mesma URL com nginx como gateway.",
+    "secondaryCta": "Ver case técnico"
   },
   "caseStudy": {
     "backToHome": "Voltar para o início",
@@ -128,6 +129,76 @@
     "ctaTitle": "Se você precisa evoluir um produto real, esse é o tipo de trabalho em que eu encaixo melhor.",
     "ctaBody": "Meu foco é assumir escopos técnicos enxutos, com leitura de contexto, proposta viável e entrega em produção sem inflar complexidade.",
     "ctaButton": "Falar sobre seu projeto"
+  },
+  "stranglerCase": {
+    "backToHome": "Voltar para o início",
+    "eyebrow": "Case técnico",
+    "title": "Strangler Fig Migration Demo",
+    "summary": "Estudo técnico público sobre migração incremental de um read path legado em PHP/Yii para Node.js + Next.js, mantendo a URL pública estável com nginx como gateway.",
+    "visualsEyebrow": "Prova visual",
+    "visualsTitle": "A diferença de comportamento aparece na própria interface",
+    "visualsSubtitle": "Em vez de depender só de diagrama, o estudo mostra o contraste entre polling legado, stream moderno e cutover de rota canônica numa interface pública.",
+    "visuals": [
+      {
+        "title": "Comparação direta entre legado e moderno",
+        "description": "A mesma ação de negócio evidencia o atraso do snapshot legado e a resposta imediata do stream moderno no mesmo dashboard.",
+        "alt": "Captura do dashboard comparando o painel legado em PHP com o painel moderno em tempo real."
+      },
+      {
+        "title": "Cutover ao vivo com a mesma URL pública",
+        "description": "O gateway mantém a rota canônica estável enquanto alterna o upstream entre legado e moderno para demonstrar a estratégia de strangler.",
+        "alt": "Captura do dashboard mostrando o bloco de live cutover com a mesma rota pública sendo servida por upstreams diferentes."
+      }
+    ],
+    "statusLabel": "Formato",
+    "statusValue": "PoC pública com demo ao vivo e código aberto",
+    "facts": [
+      {
+        "label": "Objetivo",
+        "value": "Demonstrar migração incremental sem trocar a URL pública"
+      },
+      {
+        "label": "Legado",
+        "value": "PHP/Yii com polling síncrono e atraso artificial"
+      },
+      {
+        "label": "Moderno",
+        "value": "Node.js + Socket.IO + Next.js em tempo real"
+      },
+      {
+        "label": "Gateway",
+        "value": "nginx com cutover reversível entre upstreams"
+      }
+    ],
+    "proofTitle": "O que este case demonstra",
+    "proofItems": [
+      "Coexistência entre legado e stack moderna sob o mesmo contrato público",
+      "Cutover reversível de rota canônica sem quebrar a URL do cliente",
+      "Leitura clara de ganho de UX ao sair de polling síncrono para eventos em tempo real"
+    ],
+    "overviewTitle": "Contexto do estudo",
+    "overviewBody": "A proposta foi tornar visível uma narrativa comum de modernização: um controller legado em PHP/Yii continua servindo dados por polling, enquanto uma implementação moderna em Node.js publica o mesmo evento imediatamente. Em vez de falar apenas de arquitetura, a demo mostra a diferença de comportamento lado a lado.",
+    "problemTitle": "Problema modelado",
+    "problemBody": "Reescritas completas são caras e arriscadas quando a rota pública já é consumida. O estudo parte desse cenário: manter a URL canônica estável, preservar coexistência entre implementações e permitir mudança gradual do caminho de leitura.",
+    "technicalTitle": "Recorte técnico",
+    "technical": [
+      "Dashboard em Next.js comparando snapshot legado e stream moderno",
+      "Serviço Node.js/TypeScript com Socket.IO, Postgres e Redis",
+      "Camada legado em PHP/Yii com polling HTTP, MySQL e latência simulada",
+      "nginx como gateway para rota canônica e cutover ao vivo"
+    ],
+    "operationsTitle": "Leitura operacional",
+    "operations": [
+      "A URL pública permanece a mesma durante a migração",
+      "O gateway decide qual upstream atende a rota canônica",
+      "O mesmo evento de negócio abastece os dois caminhos de leitura",
+      "O cutover pode voltar para legado ou avançar para moderno com baixo atrito"
+    ],
+    "ctaEyebrow": "Explorar",
+    "ctaTitle": "Veja a demonstração ao vivo e o repositório",
+    "ctaBody": "Esse estudo é útil para conversas sobre modernização incremental, legado PHP, gateway reverso e transição segura para uma stack Node.js/Next.js.",
+    "liveDemoButton": "Abrir demo ao vivo",
+    "repoButton": "Abrir repositório"
   },
   "services": {
     "eyebrow": "Serviços",

@@ -47,6 +47,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
       },
     });
 
+    entries.push({
+      url: getLocalizedUrl(locale, 'projects/strangler-fig-demo'),
+      lastModified,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+      alternates: {
+        languages: getAlternateLanguageUrls('projects/strangler-fig-demo'),
+      },
+    });
+
     for (const challenge of implementedChallenges) {
       entries.push({
         url: getLocalizedUrl(locale, `challenges/${challenge.slug}`),

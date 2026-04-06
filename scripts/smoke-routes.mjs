@@ -126,6 +126,22 @@ async function run() {
       'Expected Climatempo case study canonical tag to be present.'
     );
 
+    const stranglerCase = await fetchText('/pt/projects/strangler-fig-demo');
+    assert(
+      stranglerCase.response.ok,
+      `Expected "/pt/projects/strangler-fig-demo" to return 200, got ${stranglerCase.response.status}.`
+    );
+    assert(
+      stranglerCase.text.includes('Strangler Fig Migration Demo'),
+      'Expected Strangler case study title to be present.'
+    );
+    assert(
+      stranglerCase.text.includes(
+        'rel="canonical" href="https://cybersenpaiworks.com.br/pt/projects/strangler-fig-demo"'
+      ),
+      'Expected Strangler case study canonical tag to be present.'
+    );
+
     const challengesPage = await fetchText('/pt/challenges');
     assert(
       challengesPage.response.ok,
@@ -136,8 +152,8 @@ async function run() {
       'Expected challenges index title to be present.'
     );
     assert(
-      challengesPage.text.includes('Menger Sponge'),
-      'Expected second implemented challenge card to be present.'
+      !challengesPage.text.includes('Menger Sponge'),
+      'Expected hidden second challenge card not to be present in the public lab grid.'
     );
     assert(
       challengesPage.text.includes('rel="canonical" href="https://cybersenpaiworks.com.br/pt/challenges"'),
@@ -196,6 +212,10 @@ async function run() {
     assert(
       sitemap.text.includes('https://cybersenpaiworks.com.br/pt/projects/climatempo'),
       'Expected Climatempo case study URL to be present in sitemap.'
+    );
+    assert(
+      sitemap.text.includes('https://cybersenpaiworks.com.br/pt/projects/strangler-fig-demo'),
+      'Expected Strangler case study URL to be present in sitemap.'
     );
 
     console.log('Smoke route checks passed.');

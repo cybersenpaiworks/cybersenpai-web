@@ -205,6 +205,15 @@ export default async function Home({
                   <p className="mt-4 text-sm leading-relaxed text-slate-300">
                     {dict.projects.secondarySummary}
                   </p>
+                  <div className="mt-auto pt-6">
+                    <Link
+                      href={`/${lang}/projects/strangler-fig-demo`}
+                      className="inline-flex items-center gap-2 rounded-full border border-amber-400/30 bg-amber-500/10 px-5 py-3 text-sm font-semibold text-amber-200 transition-all hover:-translate-y-0.5 hover:border-amber-300 hover:text-amber-100"
+                    >
+                      {dict.projects.secondaryCta}
+                      <span aria-hidden="true">→</span>
+                    </Link>
+                  </div>
                 </aside>
               </div>
             </div>
