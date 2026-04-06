@@ -1,5 +1,6 @@
 import syncedChallengesData from './challenges.json';
 import { getImplementedChallengeById } from './implementedChallenges';
+import type { Locale } from '../i18n';
 
 export interface Challenge {
   id: number;
@@ -7,6 +8,8 @@ export interface Challenge {
   slug: string;
   implemented: boolean;
   videoUrl?: string;
+  summary?: Record<Locale, string>;
+  tags?: string[];
 }
 
 interface SyncedChallenge {
@@ -33,6 +36,8 @@ export const challenges: Challenge[] = syncedChallenges.map((challenge) => {
     title: implementedChallenge.title,
     slug: implementedChallenge.slug,
     videoUrl: implementedChallenge.videoUrl,
+    summary: implementedChallenge.summary,
+    tags: implementedChallenge.tags,
     implemented: true,
   };
 });
