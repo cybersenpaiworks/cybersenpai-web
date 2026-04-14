@@ -18,6 +18,12 @@ services:
     expose:
       - "3000"
     restart: unless-stopped
+    labels:
+      hub.enable: "true"
+      hub.name: "CyberSenpai Web"
+      hub.url: "${SITE_URL:-https://home.example.com}"
+      hub.icon: "🏠"
+      hub.description: "Site principal do ambiente CyberSenpai."
     networks:
       - proxy-network
     healthcheck:

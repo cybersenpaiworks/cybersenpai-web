@@ -37,33 +37,33 @@
   "projects": {
     "eyebrow": "Projetos em produção",
     "title": "Case principal",
-    "lead": "Minha principal prova hoje é a atuação contínua em ambientes reais de produto, com responsabilidade sobre evolução técnica, integrações e entrega.",
+    "lead": "Minha principal prova hoje está em um portal com cerca de 10 milhões de usuários mensais, onde atuo continuamente em evolução técnica, integrações, legado e frentes críticas de produto.",
     "badge": "Case em produção",
     "caseCta": "Ler case completo",
     "primaryTitle": "Climatempo",
-    "primaryRole": "Atuação PJ • quase 5 anos de casa",
-    "primarySummary": "Atuo na manutenção e evolução de frentes web da Climatempo, navegando entre stack moderna e legado com foco em integrações, SEO técnico, UI e sustentação de produto.",
+    "primaryRole": "Atuação PJ • quase 5 anos em portal de alto tráfego",
+    "primarySummary": "Na Climatempo, atuo na manutenção e evolução de frentes web de alto tráfego, conciliando legado em PHP/Twig com novas entregas em Next.js, integrações, SEO técnico e sustentação contínua de produto.",
     "contextTitle": "Contexto",
-    "contextBody": "Produto em operação real, com dependências legadas, múltiplas integrações e necessidade constante de evolução sem comprometer a estabilidade da entrega.",
+    "contextBody": "Portal em operação real, com cerca de 10 milhões de usuários mensais, múltiplas integrações e dependências legadas. O trabalho exige evoluir sem interromper a operação, reduzir gargalos e coordenar frentes com times internos e parceiros externos.",
     "responsibilitiesTitle": "Atuação",
     "responsibilitiesItems": [
-      "Manutenção evolutiva de frentes web em produção",
-      "Integração via API entre camadas e portais",
-      "Adaptação de interfaces e suporte à evolução de rotas",
-      "Apoio técnico para SEO, AdTech e consistência de entrega"
+      "Manutenção e evolução de código legado e frentes modernas em produção",
+      "Focal point da WordPress API e dos plugins que abastecem o portal",
+      "Participação ativa com AdTech para corrigir e melhorar a entrega de anúncios",
+      "Acompanhamento técnico do novo fluxo de login implementado por equipe terceirizada"
     ],
     "technicalTitle": "Recorte técnico",
     "technicalItems": [
-      "Next.js, PHP/Twig e integração com WordPress API",
-      "Convivência entre arquitetura moderna e legado",
-      "Atenção a performance, rastreabilidade e manutenção"
+      "Trabalho entre Next.js, PHP/Twig e integração com WordPress API",
+      "Migração incremental de rotas de notícias de PHP para Next.js",
+      "Preparação do mesmo movimento para as rotas de previsão do tempo"
     ],
     "impactTitle": "O que essa experiência demonstra",
     "impactEyebrow": "Por que isso importa",
     "impactItems": [
-      "Capacidade de evoluir produto real sem romper a operação",
-      "Leitura crítica de legado e integração com arquitetura moderna",
-      "Autonomia para atuar entre frontend, APIs e infraestrutura"
+      "Capacidade de sustentar e evoluir um portal de alto tráfego sem romper a operação",
+      "Autonomia para atuar como referência técnica em APIs, plugins e frentes transversais",
+      "Leitura pragmática de performance, legado e modernização incremental"
     ],
     "secondaryEyebrow": "Estudo técnico público",
     "secondaryTitle": "Strangler Fig Migration Demo",
@@ -74,60 +74,63 @@
     "backToHome": "Voltar para o início",
     "eyebrow": "Case principal",
     "title": "Climatempo",
-    "summary": "Atuação contínua em produto digital em produção, com foco em evolução web, integrações, SEO técnico e sustentação entre stack moderna e legado.",
+    "summary": "Atuação contínua em um portal com cerca de 10 milhões de usuários mensais, focada em evolução web, integrações, SEO técnico, legado e coordenação de frentes críticas de produto.",
     "statusLabel": "Escopo recorrente",
-    "statusValue": "Atuação PJ em ambiente real de produto",
+    "statusValue": "Atuação PJ em portal de alto tráfego e operação real",
     "facts": [
       {
         "label": "Duração",
         "value": "Quase 5 anos"
       },
       {
-        "label": "Stack recorrente",
-        "value": "Next.js + PHP/Twig"
+        "label": "Escala",
+        "value": "~10 milhões de usuários/mês"
       },
       {
-        "label": "Foco técnico",
-        "value": "APIs, SEO, UI e sustentação"
+        "label": "Papel",
+        "value": "Focal point em APIs e frentes críticas"
       },
       {
-        "label": "Contexto",
-        "value": "Produto em produção com legado e integrações"
+        "label": "Foco",
+        "value": "Modernização incremental, integrações e sustentação"
       }
     ],
     "overviewTitle": "Contexto do case",
-    "overviewBody": "A Climatempo exige evolução contínua em frentes web que convivem com legado, integrações e dependências já estabelecidas. O trabalho pede leitura cuidadosa do ambiente, adaptação progressiva e capacidade de entregar sem comprometer a operação em produção.",
+    "overviewBody": "A Climatempo exige evolução contínua em frentes web que convivem com legado, integrações e dependências já estabelecidas, em um contexto de alto tráfego mensal. O trabalho pede leitura cuidadosa do ambiente, adaptação progressiva e capacidade de entregar sem comprometer a operação em produção.",
     "responsibilitiesTitle": "Responsabilidades",
     "responsibilities": [
-      "Manutenção evolutiva de frentes web em produção",
-      "Integração via API entre portais, CMS e camadas de aplicação",
-      "Ajustes de interface, rotas e sustentação técnica de produto",
-      "Apoio em SEO técnico, AdTech e consistência de entrega"
+      "Manutenção evolutiva de legado e frentes modernas em produção",
+      "Focal point da WordPress API e desenvolvimento/manutenção dos plugins do portal",
+      "Atuação com AdTech para correções e melhorias na entrega de anúncios",
+      "Liderança do backend do ms-ai, agente auxiliar do portal",
+      "Focal point técnico do novo fluxo de login conduzido com equipe terceirizada"
     ],
     "technicalTitle": "Recorte técnico",
     "technical": [
-      "Trabalho entre Next.js, PHP/Twig e integrações com WordPress API",
-      "Convivência diária com arquitetura moderna e infraestrutura legada",
-      "Atenção a performance, rastreabilidade e manutenção futura"
+      "Trabalho entre Next.js, PHP/Twig, WordPress API e integrações de portal",
+      "Migração incremental de rotas de notícias de PHP para Next.js com abordagem strangler",
+      "Preparação da futura modernização das rotas de previsão do tempo",
+      "Otimizações pontuais de frontend para reduzir gargalos perceptíveis em produção"
     ],
     "operationsTitle": "Leitura operacional",
     "operations": [
-      "Prioridade para evolução incremental em vez de ruptura",
-      "Decisão técnica orientada por estabilidade, contexto e custo de manutenção",
-      "Atuação entre frontend, integração e infraestrutura quando necessário"
+      "Prioridade para evolução incremental em vez de reescritas de alto risco",
+      "Capacidade de assumir ownership técnico de frentes com múltiplos stakeholders",
+      "Decisões guiadas por tráfego, estabilidade e custo de manutenção",
+      "Coordenação entre times internos, parceiros externos e dependências legadas"
     ],
     "ecosystemEyebrow": "Projetos relacionados",
     "ecosystemTitle": "Agroclima & Defesa Civil",
-    "ecosystemBody": "Dentro do mesmo ecossistema, também participei de frentes ligadas a Agroclima e Defesa Civil, colaborando em UI, BFF/API, pipeline CI/CD e integração entre aplicações Next.js e infraestrutura existente.",
+    "ecosystemBody": "Dentro do mesmo ecossistema, também participei de frentes ligadas a Agroclima e Defesa Civil, colaborando em UI, BFF/API, pipeline CI/CD e integração entre aplicações Next.js e infraestrutura existente. Em Defesa Civil, ajudei a reduzir um gargalo de cerca de 3s para 0,5s com uma alteração pontual no frontend e fetch assíncrono de dados.",
     "proofTitle": "O que este case demonstra",
     "proofItems": [
-      "Capacidade de evoluir produto real sem comprometer a operação",
-      "Boa leitura de legado e integração incremental com stack moderna",
-      "Autonomia para atuar entre desenvolvimento web, APIs e infraestrutura"
+      "Capacidade de evoluir um portal com ~10 milhões de usuários mensais sem comprometer a operação",
+      "Atuação como referência técnica em WordPress API, plugins e frentes transversais",
+      "Modernização incremental de legado com foco em performance e continuidade"
     ],
     "ctaEyebrow": "Próximo passo",
-    "ctaTitle": "Se você precisa evoluir um produto real, esse é o tipo de trabalho em que eu encaixo melhor.",
-    "ctaBody": "Meu foco é assumir escopos técnicos enxutos, com leitura de contexto, proposta viável e entrega em produção sem inflar complexidade.",
+    "ctaTitle": "Se você precisa evoluir um produto real sem romper a operação, esse é o tipo de trabalho em que eu encaixo melhor.",
+    "ctaBody": "Meu foco é assumir escopos técnicos enxutos, com leitura de contexto, proposta viável e entrega em produção mesmo quando há legado, integração entre times e pressão operacional.",
     "ctaButton": "Falar sobre seu projeto"
   },
   "stranglerCase": {

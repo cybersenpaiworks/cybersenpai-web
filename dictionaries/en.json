@@ -37,33 +37,33 @@
   "projects": {
     "eyebrow": "Production work",
     "title": "Main case",
-    "lead": "My strongest proof today is ongoing work in real product environments, with direct responsibility over technical evolution, integrations, and delivery.",
+    "lead": "My strongest proof today lives in a portal with roughly 10 million monthly users, where I work continuously across technical evolution, integrations, legacy systems, and critical product fronts.",
     "badge": "Case in production",
     "caseCta": "Read full case",
     "primaryTitle": "Climatempo",
-    "primaryRole": "PJ engagement • nearly 5 years on the team",
-    "primarySummary": "I work on the maintenance and evolution of Climatempo web fronts, moving between modern stack and legacy systems with focus on integrations, technical SEO, UI, and product support.",
+    "primaryRole": "PJ engagement • nearly 5 years in a high-traffic portal",
+    "primarySummary": "At Climatempo, I work on the maintenance and evolution of high-traffic web fronts, balancing legacy PHP/Twig with new Next.js deliveries, integrations, technical SEO, and ongoing product support.",
     "contextTitle": "Context",
-    "contextBody": "A real production product with legacy dependencies, multiple integrations, and a constant need to evolve without compromising delivery stability.",
+    "contextBody": "A real production portal with roughly 10 million monthly users, multiple integrations, and legacy dependencies. The work requires evolving the product without interrupting operations, reducing bottlenecks, and coordinating across internal teams and external partners.",
     "responsibilitiesTitle": "Scope of work",
     "responsibilitiesItems": [
-      "Evolutionary maintenance of production web fronts",
-      "API integration across layers and portals",
-      "Interface adaptation and support for route evolution",
-      "Technical support for SEO, AdTech, and delivery consistency"
+      "Maintenance and evolution of legacy code and modern production fronts",
+      "Technical focal point for the WordPress API and the plugins feeding the portal",
+      "Active work with AdTech to improve ad delivery and fix issues",
+      "Technical follow-up on the new login flow implemented with a third-party team"
     ],
     "technicalTitle": "Technical focus",
     "technicalItems": [
-      "Next.js, PHP/Twig, and WordPress API integrations",
-      "Working between modern architecture and legacy systems",
-      "Attention to performance, traceability, and maintainability"
+      "Work across Next.js, PHP/Twig, and WordPress API integrations",
+      "Incremental migration of news routes from PHP into Next.js",
+      "Preparation for the same movement in future weather forecast routes"
     ],
     "impactTitle": "What this experience proves",
     "impactEyebrow": "Why it matters",
     "impactItems": [
-      "Ability to evolve real products without breaking operations",
-      "Strong reading of legacy systems and integration with modern architecture",
-      "Autonomy across frontend, APIs, and infrastructure"
+      "Ability to sustain and evolve a high-traffic portal without breaking operations",
+      "Autonomy to act as a technical reference across APIs, plugins, and cross-team fronts",
+      "Pragmatic reading of performance, legacy systems, and incremental modernization"
     ],
     "secondaryEyebrow": "Public technical study",
     "secondaryTitle": "Strangler Fig Migration Demo",
@@ -74,60 +74,63 @@
     "backToHome": "Back to home",
     "eyebrow": "Main case",
     "title": "Climatempo",
-    "summary": "Ongoing work on a production digital product, focused on web evolution, integrations, technical SEO, and support across modern stack and legacy systems.",
+    "summary": "Ongoing work on a portal with roughly 10 million monthly users, focused on web evolution, integrations, technical SEO, legacy systems, and coordination across critical product fronts.",
     "statusLabel": "Recurring scope",
-    "statusValue": "PJ engagement in a real product environment",
+    "statusValue": "PJ engagement in a high-traffic production portal",
     "facts": [
       {
         "label": "Duration",
         "value": "Nearly 5 years"
       },
       {
-        "label": "Recurring stack",
-        "value": "Next.js + PHP/Twig"
+        "label": "Scale",
+        "value": "~10 million users/month"
       },
       {
-        "label": "Technical focus",
-        "value": "APIs, SEO, UI, and support"
+        "label": "Role",
+        "value": "Technical focal point in APIs and critical fronts"
       },
       {
-        "label": "Context",
-        "value": "Production product with legacy systems and integrations"
+        "label": "Focus",
+        "value": "Incremental modernization, integrations, and support"
       }
     ],
     "overviewTitle": "Case context",
-    "overviewBody": "Climatempo requires continuous evolution across web fronts that coexist with legacy systems, integrations, and established dependencies. The work demands careful reading of the environment, progressive adaptation, and the ability to deliver without compromising production operations.",
+    "overviewBody": "Climatempo requires continuous evolution across web fronts that coexist with legacy systems, integrations, and established dependencies in a high-traffic environment. The work demands careful reading of the system, progressive adaptation, and the ability to deliver without compromising production operations.",
     "responsibilitiesTitle": "Responsibilities",
     "responsibilities": [
-      "Evolutionary maintenance of production web fronts",
-      "API integration across portals, CMS, and application layers",
-      "UI adjustments, route support, and product-facing technical support",
-      "Support for technical SEO, AdTech, and delivery consistency"
+      "Evolutionary maintenance of legacy code and modern production fronts",
+      "Technical focal point for the WordPress API and the development/maintenance of the portal plugins",
+      "Work with AdTech to improve ad delivery and resolve operational issues",
+      "Leading the backend of ms-ai, an assistant agent for the portal",
+      "Technical focal point for the new login flow carried out with a third-party team"
     ],
     "technicalTitle": "Technical focus",
     "technical": [
-      "Work across Next.js, PHP/Twig, and WordPress API integrations",
-      "Daily interaction between modern architecture and legacy infrastructure",
-      "Attention to performance, traceability, and future maintainability"
+      "Work across Next.js, PHP/Twig, WordPress API, and portal integrations",
+      "Incremental migration of news routes from PHP into Next.js using a strangler approach",
+      "Preparation for the future modernization of weather forecast routes",
+      "Targeted frontend optimizations to reduce visible production bottlenecks"
     ],
     "operationsTitle": "Operational lens",
     "operations": [
-      "Priority on incremental evolution instead of disruptive rewrites",
-      "Technical decisions guided by stability, context, and maintenance cost",
-      "Ability to move across frontend, integration, and infrastructure when needed"
+      "Priority on incremental evolution instead of high-risk rewrites",
+      "Ability to take technical ownership of fronts with multiple stakeholders",
+      "Decisions guided by traffic, stability, and maintenance cost",
+      "Coordination across internal teams, external partners, and legacy dependencies"
     ],
     "ecosystemEyebrow": "Related projects",
     "ecosystemTitle": "Agroclima & Civil Defense",
-    "ecosystemBody": "Inside the same ecosystem, I also worked on initiatives connected to Agroclima and Civil Defense, contributing to UI, BFF/API, CI/CD pipeline, and integration between Next.js applications and the existing infrastructure.",
+    "ecosystemBody": "Inside the same ecosystem, I also worked on initiatives connected to Agroclima and Civil Defense, contributing to UI, BFF/API, CI/CD pipeline, and integration between Next.js applications and the existing infrastructure. In Civil Defense, I helped reduce a visible bottleneck from around 3s to 0.5s by adjusting the frontend and making data fetching asynchronous.",
     "proofTitle": "What this case proves",
     "proofItems": [
-      "Ability to evolve a real product without compromising operations",
-      "Strong reading of legacy systems and incremental integration with modern stack",
-      "Autonomy across web development, APIs, and infrastructure"
+      "Ability to evolve a portal with ~10 million monthly users without compromising operations",
+      "Acting as a technical reference across WordPress API, plugins, and cross-team initiatives",
+      "Incremental modernization of legacy systems with focus on performance and continuity"
     ],
     "ctaEyebrow": "Next step",
-    "ctaTitle": "If you need to evolve a real product, this is the kind of work where I fit best.",
-    "ctaBody": "My focus is taking on lean technical scopes with good context reading, a viable proposal, and production-ready delivery without inflating complexity.",
+    "ctaTitle": "If you need to evolve a real product without breaking operations, this is the kind of work where I fit best.",
+    "ctaBody": "My focus is taking on lean technical scopes with strong context reading, a viable proposal, and production-ready delivery even when legacy systems, cross-team dependencies, and operational pressure are involved.",
     "ctaButton": "Discuss your project"
   },
   "stranglerCase": {
